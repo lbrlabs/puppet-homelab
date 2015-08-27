@@ -6,6 +6,8 @@ class puppet::agent (
   $run_method = 'service'
 ) {
 
+  include puppet::agent::packages
+
   augeas { 'puppet_conf':
     context => '/files/etc/puppet/puppet.conf/main',
     changes => [
