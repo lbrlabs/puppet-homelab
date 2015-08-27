@@ -1,3 +1,6 @@
+# configure the puppetmaster
+class puppet::master::config {
+
 # symlink /etc/hiera.yaml to puppet's so that there is no confusion
   file {'/etc/hiera.yaml':
     ensure => link,
@@ -12,3 +15,4 @@
     owner  => 'root',
     group  => 'root',
   }
+}
