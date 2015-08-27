@@ -1,1 +1,2 @@
 # Hiera data will go here
+puppet::puppet_master: "puppetmaster.leebriggs.lan"

@@ -1,0 +1,1 @@
+puppet::master::r10k::basegiturl: 'git@github.com:jaxxstorm/personal-puppet.git'
