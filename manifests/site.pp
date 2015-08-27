@@ -2,11 +2,13 @@
 
 node default {
 
-  if $role {
+  if $::role {
     notify {'role is not defined, setting to base role': }
-    $role = 'base'
+    $real_role = 'base'
+  } else {
+    $real_role = $::role
   }
 
-  include "roles::${role}"
+  include "roles::${real_role}"
 
 }
