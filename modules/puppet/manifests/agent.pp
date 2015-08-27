@@ -3,7 +3,8 @@ class puppet::agent (
   $puppet_server = 'puppetmaster',
   $puppet_environment = 'production',
   $splay  = true,
-  $run_method = 'service'
+  $run_method = 'service',
+  $run_interval = '30m'
 ) {
 
   include puppet::agent::packages
@@ -31,6 +32,7 @@ class puppet::agent (
     'set syslogfacility local4',
     'set agent_disabled_lockfile "/var/run/puppet/agent_disabled.lock"',
     'set http_compression true',
+    "set runinterval ${run_interval}",
     ],
   }
 
