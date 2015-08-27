@@ -1,2 +1,5 @@
 ---
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
+diamond::graphite_host: "graphite.leebriggs.lan"
+diamond::path_prefix: "diamond"
+diamond::rotate_days: 14

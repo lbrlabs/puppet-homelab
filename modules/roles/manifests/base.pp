@@ -11,7 +11,7 @@ class roles::base {
   }
 
   # We need stats from everything, so install diamond everywhere
-  #include ::diamond
+  include ::diamond
 
 }
 
