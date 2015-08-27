@@ -27,6 +27,14 @@ class puppet::master::r10k (
     group   => 'puppet',
     mode    => '0644',
   }
+  
+  file {'/usr/local/bin/r10krunner.sh':
+    ensure => present,
+    source => 'puppet:///modules/puppet/master/r10krunner.sh',
+    mode   => '0775',
+    owner  => 'root',
+    group  => 'root',
+  }
 
   if ($enable_cron) {
     $cron_ensure = 'present'
@@ -36,7 +44,7 @@ class puppet::master::r10k (
 
   cron {'puppet_master_r10k_deploy_environment':
       ensure  => $cron_ensure,
-      command => '/usr/local/bin/r10k deploy environment -p --verbose --config /etc/puppet/r10k.yaml > /var/log/puppet/r10k_deploy_environments.out 2>&1',
+      command => '/usr/local/bin/r10krunner.sh /usr/local/bin/r10k deploy environment -p --verbose --config /etc/puppet/r10k.yaml > /var/log/puppet/r10k_deploy_environments.out 2>&1',
       user    => 'puppet',
       hour    => '*',
       minute  => '*',
