@@ -34,5 +34,5 @@ mod 'nanliu/staging', '1.0.3'
 mod 'm0byd1ck/repoforge', '1.0.0'
 
 mod 'diamond',
-  :git => 'https://github.com/garethr/garethr-diamond.git',
-  :ref => '1355a5f5052368ff44b31c73630bb5a75f46c32c'
+  :git    => 'https://github.com/garethr/garethr-diamond.git',
+  :commit => '1355a5f5052368ff44b31c73630bb5a75f46c32c'
