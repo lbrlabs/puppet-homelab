@@ -1,1 +1,2 @@
-puppet::agent::puppet_master: "puppetmaster.leebriggs.lan"
+---
+puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
