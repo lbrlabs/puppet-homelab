@@ -16,11 +16,19 @@ mod 'stahnma/epel', :latest
 # Grafana Module
 mod 'bfraser/grafana', '2.1.0'
 
-# Diamond stats collector
-# Using this fork because the official mod has no systemd support
-mod 'diamond',
-  :git => 'https://github.com/justin8/garethr-diamond.git',
-  :ref => 'ubuntu15-and-systemd-support'
+# Mrepo Module
+# Used for managing our repos
+mod 'puppetlabs/mrepo', '1.2.0'
 
-# SystemD helper module
-mod 'justin8/systemd', '0.3.0'
+# Concat Module
+mod 'puppetlabs/concat', '1.2.4'
+
+# vcsrepo module
+mod 'puppetlabs/vcsrepo', '1.3.1'
+
+# staging module
+mod 'nanliu/staging', '1.0.3'
+
+# Repoforge module
+# Needed for mrepo
+mod 'm0byd1ck/repoforge', '1.0.0'
