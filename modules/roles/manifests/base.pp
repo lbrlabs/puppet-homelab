@@ -6,8 +6,9 @@ class roles::base {
   # We want puppet everywhere
   include puppet::agent
 
-  # TODO: Don't include on debian hosts?
-  include ::epel
+  class { 'profiles::yumrepos':
+    stage => pre,
+  }
 
   # We need stats from everything, so install diamond everywhere
   #include ::diamond
