@@ -11,7 +11,11 @@ class roles::base {
   }
 
   # We need stats from everything, so install diamond everywhere
-  #include ::diamond
+  include ::diamond
+
+  # Collect some base system metrics
+  # TODO: Include diamond in here?
+  include profiles::system_metrics
 
 }
 
