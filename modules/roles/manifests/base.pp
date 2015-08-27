@@ -4,7 +4,7 @@
 class roles::base {
 
   # We want puppet everywhere
-  include puppet::agent
+  include profile::puppetagent
 
   class { 'profiles::yumrepos':
     stage => pre,
