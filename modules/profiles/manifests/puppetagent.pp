@@ -5,6 +5,12 @@ class profiles::puppetagent {
   include puppet::agent
 
   # Include the diamond collector with it
-  diamond::collector { 'PuppetAgentCollector': }
+  diamond::collector { 'PuppetAgentCollector':
+    require => Package['PyYAML'],
+  }
+
+  package { 'PyYAML':
+    ensure => 'installed',
+  }
 
 }
