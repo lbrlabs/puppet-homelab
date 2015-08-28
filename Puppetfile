@@ -38,3 +38,9 @@ mod 'diamond',
   :commit => '1355a5f5052368ff44b31c73630bb5a75f46c32c'
 
 mod 'puppetlabs/mysql', '3.6.0'
+
+mod 'foreman',
+  :git    => 'https://github.com/theforeman/puppet-foreman.git',
+  :commit => 'cccd4e6a0c6f89d6b39f3e448a46ea902024b979'
+
+
