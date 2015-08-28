@@ -7,3 +7,4 @@ sensu::api_password: "sensu"
 sensu::redis_host: "sensu.leebriggs.lan"
 sensu::redis_reconnect_on_error: true
 uchiwa::install_repo: false
+redis::bind: "0.0.0.0"
