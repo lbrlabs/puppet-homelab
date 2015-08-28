@@ -11,6 +11,7 @@ sensu::rabbitmq_password: "sensu"
 sensu::rabbitmq_vhost: "/sensu"
 sensu::purge: true
 sensu::use_embedded_ruby: true
+sensu::subscriptions: [ "base" ]
 sensu::client_keepalive:
   thresholds:
     warning: "45"
