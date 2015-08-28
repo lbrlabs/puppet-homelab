@@ -12,9 +12,9 @@ class { '::rabbitmq':
 
   rabbitmq_vhost { '/sensu': }
 
-  rabbitmq_user { 'sensu':
-    password => $password
-  }
+  #rabbitmq_user { 'sensu':
+  #  password => $password
+  #}
 
   rabbitmq_user_permissions { 'sensu@/sensu':
     configure_permission => '.*',
