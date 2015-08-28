@@ -18,3 +18,4 @@ uchiwa::sensu_api_endpoints:
       path: ""
       timeout: 10
 redis::bind: "0.0.0.0"
+profiles::rabbitmq::password: "sensu"
