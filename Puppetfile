@@ -43,4 +43,8 @@ mod 'foreman',
   :git    => 'https://github.com/theforeman/puppet-foreman.git',
   :commit => 'cccd4e6a0c6f89d6b39f3e448a46ea902024b979'
 
+mod 'garethr/erlang', '0.3.0'
+
+mod 'puppetlabs/rabbitmq', '5.2.3'
+
 
