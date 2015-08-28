@@ -17,5 +17,7 @@ class roles::base {
   # TODO: Include diamond in here?
   include profiles::system_metrics
 
+  include ::sensu
+
 }
 
