@@ -7,14 +7,14 @@ sensu::api_password: "sensu"
 sensu::redis_host: "sensu.leebriggs.lan"
 sensu::redis_reconnect_on_error: true
 uchiwa::install_repo: false
-uchiwa::sensu_api_endpoints: 
-  sensu: "main"
-  host: "192.168.4.29"
-  ssl: false
-  insecure: false
-  port: 4567
-  user: "sensu"
-  pass: "sensu"
-  path: ""
-  timeout: 10
+uchiwa::sensu_api_endpoints:
+  - main: 
+      host: "192.168.4.29"
+      ssl: false
+      insecure: false
+      port: 4567
+      user: "sensu"
+      pass: "sensu"
+      path: ""
+      timeout: 10
 redis::bind: "0.0.0.0"
