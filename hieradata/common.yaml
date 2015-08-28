@@ -10,7 +10,5 @@ sensu::rabbitmq_user: "sensu"
 sensu::rabbitmq_password: "sensu"
 sensu::rabbitmq_vhost: "/sensu"
 sensu::rabbitmq_reconnect_on_error: true
-sensu::redis_host: "sensu.leebriggs.lan"
-sensu::redis_reconnect_on_error: true
 sensu::purge: true
 sensu::use_embedded_ruby: true
