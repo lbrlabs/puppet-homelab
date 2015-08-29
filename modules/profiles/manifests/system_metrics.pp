@@ -7,4 +7,6 @@ class profiles::system_metrics {
 
   diamond::collector { 'LoadAverageCollector': }
 
+  diamond::collector { 'DiskSpaceCollector':}
+
 }
