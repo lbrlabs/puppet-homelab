@@ -57,11 +57,11 @@ mod 'puppetlabs/rabbitmq', '5.2.3'
 
 # Sensu Module
 mod 'sensu',
-  :git => 'https://github.com/sensu/sensu-puppet.git',
+  :git    => 'https://github.com/sensu/sensu-puppet.git',
   :commit => 'd1819aa2d8e817bdb4497eb61aaeee5ff74c0c20'
 
 # Uchiwa Module
 mod 'uchiwa',
-  :git => 'https://github.com/Yelp/puppet-uchiwa.git',
+  :git    => 'https://github.com/Yelp/puppet-uchiwa.git',
   :commit => 'd1bf90bef37973371f5d619e3ca7e77b0481b9d3'
 >>>>>>> production
