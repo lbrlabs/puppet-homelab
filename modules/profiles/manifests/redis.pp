@@ -3,6 +3,6 @@ class profiles::redis {
 
   include ::redis
 
-  diamond::collector { 'LoadAverageCollector': }
+  diamond::collector { 'RedisCollector': }
 
 }
