@@ -5,4 +5,6 @@ class roles::vzhost inherits roles::base {
   # run it inside OpenVZ containers for some reason
   include profiles::rabbitmq
 
+  include profiles::hardware
+
 }
