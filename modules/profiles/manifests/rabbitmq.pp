@@ -23,6 +23,11 @@ class { '::rabbitmq':
     require              => Rabbitmq_vhost['/sensu'],
   }
 
-  diamond::collector { 'RabbitMQCollector': }
+  diamond::collector { 'RabbitMQCollector':
+    options => [
+      'vhosts',
+    ]
+  }
+
 
 }
