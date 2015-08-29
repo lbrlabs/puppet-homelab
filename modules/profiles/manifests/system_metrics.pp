@@ -5,4 +5,6 @@ class profiles::system_metrics {
 
   diamond::collector { 'MemoryCollector': }
 
+  diamond::collector { 'LoadAverageCollector': }
+
 }
