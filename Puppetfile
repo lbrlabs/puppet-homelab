@@ -64,4 +64,3 @@ mod 'sensu',
 mod 'uchiwa',
   :git    => 'https://github.com/Yelp/puppet-uchiwa.git',
   :commit => 'd1bf90bef37973371f5d619e3ca7e77b0481b9d3'
->>>>>>> production
