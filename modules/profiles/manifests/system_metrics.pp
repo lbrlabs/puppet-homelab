@@ -3,4 +3,6 @@ class profiles::system_metrics {
 
   diamond::collector { 'CPUCollector': }
 
+  diamond::collector { 'MemoryCollector': }
+
 }
