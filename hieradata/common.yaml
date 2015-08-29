@@ -1,6 +1,18 @@
 ---
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
+puppet::agent::run_interval: "5m"
 diamond::graphite_host: "graphite.leebriggs.lan"
 diamond::path_prefix: "diamond"
 diamond::rotate_days: 14
 diamond::interval: 10
+sensu::rabbitmq_host: "virt3.leebriggs.lan"
+sensu::rabbitmq_user: "sensu"
+sensu::rabbitmq_password: "sensu"
+sensu::rabbitmq_vhost: "/sensu"
+sensu::purge: true
+sensu::use_embedded_ruby: true
+sensu::subscriptions: [ "base" ]
+sensu::client_keepalive:
+  thresholds:
+    warning: "45"
+    critical: "90"

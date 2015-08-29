@@ -4,15 +4,12 @@
 class roles::base {
 
   # We want puppet everywhere
-  include puppet::agent
+  include profiles::puppetagent
 
   class { 'profiles::yumrepos':
     stage => pre,
   }
-
-  # We need stats from everything, so install diamond everywhere
-  include ::diamond
-
+  
   # Collect some base system metrics
   # TODO: Include diamond in here?
   include profiles::system_metrics

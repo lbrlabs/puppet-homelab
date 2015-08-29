@@ -1,0 +1,21 @@
+---
+sensu::server: true
+sensu::api: true
+sensu::api_user: "sensu"
+sensu::rabbitmq_host: "virt3.leebriggs.lan"
+sensu::api_password: "sensu"
+sensu::redis_host: "sensu.leebriggs.lan"
+sensu::redis_reconnect_on_error: true
+uchiwa::install_repo: false
+uchiwa::sensu_api_endpoints:
+  - main: 
+      host: "192.168.4.29"
+      ssl: false
+      insecure: false
+      port: 4567
+      user: "sensu"
+      pass: "sensu"
+      path: ""
+      timeout: 10
+redis::bind: "0.0.0.0"
+profiles::rabbitmq::password: "sensu"

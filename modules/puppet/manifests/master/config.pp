@@ -15,4 +15,12 @@ class puppet::master::config {
     owner  => 'root',
     group  => 'root',
   }
+
+  file {'/etc/puppet/node.rb':
+    ensure => present,
+    source => 'puppet:///modules/puppet/master/node.rb',
+    mode   => '0755',
+    owner  => 'puppet',
+    group  => 'puppet',
+  }
 }
