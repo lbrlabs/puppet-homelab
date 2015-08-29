@@ -9,10 +9,7 @@ class roles::base {
   class { 'profiles::yumrepos':
     stage => pre,
   }
-
-  # We need stats from everything, so install diamond everywhere
-  include ::diamond
-
+  
   # Collect some base system metrics
   # TODO: Include diamond in here?
   include profiles::system_metrics
@@ -22,7 +19,5 @@ class roles::base {
   class { 'profiles::users':
     stage => pre
   }
-  
-
 }
 
