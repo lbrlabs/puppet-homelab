@@ -19,5 +19,10 @@ class roles::base {
 
   include ::sensu
 
+  class { 'profiles::users':
+    stage => pre
+  }
+  
+
 }
 
