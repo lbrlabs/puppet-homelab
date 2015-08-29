@@ -1,2 +1,9 @@
 ---
 graphite::secret_key: ENC[PKCS7,MIIBqQYJKoZIhvcNAQcDoIIBmjCCAZYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAKg4Clk5o3GkazOAL6kxowKVMTAabgtcZV6C9orVz3w1MabYZNj9ze8lx8D6Ez8VfdZIZmP1DyII5BYsKOwOf1Trx9SZ8hCv1ARAFedTjoxVXr0b5wyupg7urYWRmGtt7KNA3lnZ/ZfcmqFZFYwFW6AIVy9nV9EMhWpt1KnBIn+/zIrPN14FdN8cHY2CiBUKRwwhk+5SE2iYtQAULSL2po54Ogs7gvVKMWXXT4a3RnxrK9ERKpxcy5jXuXHenkKt5l+3Uy3Pwq8uiSScfcuYSkE/obFXUCthd3jR8YTDO7/6pyK8NwAtdimZiew7vYiZyxRQs+Ly16/ZkqgwpJRw/qzBsBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBChiGXezyQYjoIIQgZu9ELLgEAUUZtmQX2kve/sP0nliNJNapVpBGBAHIRGIKrqWYl9RTYQWj5XA/uV3k9A/AgXb+/6czS8xsrWjukzAMR6ZO+H]
+graphite::gr_storage_schemas:
+  - name: 'carbon'
+    pattern: '^carbon\.'
+    retentions: '60s:90d'
+  - name: 'default'
+    pattern: '.*'
+    retentions: '10s:7d,60s:30d,5m:90d,15m:1y'
