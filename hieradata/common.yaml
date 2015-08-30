@@ -1,6 +1,6 @@
 ---
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
-puppet::agent::run_interval: "5m"
+puppet::agent::run_interval: "15m"
 diamond::graphite_host: "graphite.leebriggs.lan"
 diamond::path_prefix: "hosts.%{::virtual}.diamond"
 diamond::rotate_days: 14
