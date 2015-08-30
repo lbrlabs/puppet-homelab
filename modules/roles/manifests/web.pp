@@ -26,4 +26,6 @@ class roles::web inherits roles::base {
     proxy_preserve_host => true
   }
 
+  include ::apache::mod::status
+
 }
