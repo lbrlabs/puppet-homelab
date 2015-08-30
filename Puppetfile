@@ -68,3 +68,7 @@ mod 'uchiwa',
 mod 'dnsmasq',
   :git    => 'https://github.com/rlex/puppet-dnsmasq.git',
   :commit => 'd37d48012df8115132694b0f9c9d0fff15a4fb3c'
+
+mod 'jira',
+  :git    => 'https://github.com/puppet-community/puppet-jira.git',
+  :commit => 'f402380435f3cb654e70dcb0b4031fb4cc1fa543'
