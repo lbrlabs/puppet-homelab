@@ -12,8 +12,7 @@ class profiles::system_checks {
   }
 
   moncheck { 'check_load':
-    command           => 'send email to nagiosplug-devel@lists.sourceforge.net',
+    command           => '/usr/lib64/nagios/plugins/check_load -r -w 5,5,5 -c 10,10,10',
     event_description => 'check the load on this host!'
   }
-
 }

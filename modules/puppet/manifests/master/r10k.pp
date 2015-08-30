@@ -47,7 +47,7 @@ class puppet::master::r10k (
       command => '/usr/local/bin/r10krunner.sh /usr/local/bin/r10k deploy environment -p --verbose --config /etc/puppet/r10k.yaml > /var/log/puppet/r10k_deploy_environments.out 2>&1',
       user    => 'puppet',
       hour    => '*',
-      minute  => '*',
+      minute  => '5',
     }
 
 }

@@ -1,0 +1,2 @@
+---
+profiles::rabbitmq::enabled: false
