@@ -12,7 +12,9 @@ sensu::rabbitmq_vhost: "/sensu"
 sensu::purge: true
 sensu::use_embedded_ruby: true
 sensu::subscriptions: [ "base" ]
+sensu::sensu_plugin_version: "latest"
 sensu::client_keepalive:
+  handler: 'opsgenie'
   thresholds:
     warning: "45"
     critical: "90"

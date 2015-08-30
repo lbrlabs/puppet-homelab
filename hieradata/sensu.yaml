@@ -19,3 +19,4 @@ uchiwa::sensu_api_endpoints:
       timeout: 10
 redis::bind: "0.0.0.0"
 profiles::rabbitmq::password: "sensu"
+roles::sensu::opsgenie_customer_key: ENC[PKCS7,MIIBmQYJKoZIhvcNAQcDoIIBijCCAYYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAMseZAtOePO+vNaDJ2oyvXPE7+QWdDBJcGDc61zwtpkUqnhwZ4SnUcZG9qvhgM6Al1+19gyfWIE7fyIdYA1dsTYKc3xQ9l2VkqjX4z9BcWto3t2pCQizEU3llGOFs898TlMErRiX2iPFjzZWsdWx+unIw8/4wOQH/wTbYfdhfxh31Mkf3acY7lS2ZLbDoQdKIKwGJ/+RDA3dVRlqJm9aEoi6+lAS4MqvbAJTIlQ+O1WjTJQduEUQjPMNaN+dCH4q6Vi8gg+COdwmRfiD4YakvAUFff/AtaaH2AZsrJd2teGv7YWmGs2fb9LKn16bME5O1/HA7O+5vnyDffmmL0rDuQTBcBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBKqk7flKXCjIyo/TvGV5g1gDA8k7L4EioQYtK5i1XeeWjQZCFj86LxsJJUe6iOI54QkCgcbdKK9Bb+sK2Utxla2vo=]
