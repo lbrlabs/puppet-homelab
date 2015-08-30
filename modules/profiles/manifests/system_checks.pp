@@ -6,4 +6,9 @@ class profiles::system_checks {
     ensure => installed,
   }
 
+  moncheck { 'disk_usage':
+    command           => '/usr/lib64/nagios/plugins/check_disk -u GB -l',
+    event_description => 'Check the free disk space on this host!'
+  }
+
 }
