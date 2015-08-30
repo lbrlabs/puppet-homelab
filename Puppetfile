@@ -64,3 +64,7 @@ mod 'sensu',
 mod 'uchiwa',
   :git    => 'https://github.com/Yelp/puppet-uchiwa.git',
   :commit => 'd1bf90bef37973371f5d619e3ca7e77b0481b9d3'
+
+mod 'dnsmasq',
+  :git    => 'https://github.com/rlex/puppet-dnsmasq.git',
+  :commit => 'd37d48012df8115132694b0f9c9d0fff15a4fb3c'
