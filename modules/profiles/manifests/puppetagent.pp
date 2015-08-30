@@ -13,4 +13,8 @@ class profiles::puppetagent {
     ensure => 'installed',
   }
 
+  package { 'sensu-plugins-puppet':
+    ensure   => installed,
+    provider => sensu_gem
+  }
 }

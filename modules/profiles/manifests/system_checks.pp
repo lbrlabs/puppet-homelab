@@ -6,6 +6,16 @@ class profiles::system_checks {
     ensure => installed,
   }
 
+  package { 'sensu-plugins-memory-checks':
+    ensure   => installed,
+    provider => sensu_gem
+  }
+
+  package { 'sensu-plugins-cpu-checks':
+    ensure   => installed,
+    provider => sensu_gem
+  }
+
   moncheck { 'check_disk_usage':
     command           => '/usr/lib64/nagios/plugins/check_disk -u GB -l',
     event_description => 'Check the free disk space on this host!'

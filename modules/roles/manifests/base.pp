@@ -21,5 +21,11 @@ class roles::base {
   }
 
   include profiles::system_checks
+
+  # Install packages first
+  # Some things depend on this stuff, so do it early
+  class { 'profiles::packages':
+    stage => pre
+  }
 }
 
