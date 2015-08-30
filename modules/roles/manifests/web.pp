@@ -16,13 +16,14 @@ class roles::web inherits roles::base {
   }
 
   apache::vhost { 'jira.leebriggs.lan':
-    serveraliases => [
+    serveraliases       => [
       'jira.briggs.io',
       'jira.leebriggs.co.uk',
     ],
-    port          => '80',
-    docroot       => '/var/www/jira',
-    proxy_dest    => 'http://localhost:8080'
+    port                => '80',
+    docroot             => '/var/www/jira',
+    proxy_dest          => 'http://localhost:8080',
+    proxy_preserve_host => true
   }
 
 }
