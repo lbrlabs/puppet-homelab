@@ -25,4 +25,15 @@ class profiles::system_checks {
     command           => '/usr/lib64/nagios/plugins/check_load -r -w 5,5,5 -c 10,10,10',
     event_description => 'check the load on this host!'
   }
+
+  moncheck { 'check_cpu':
+    command           => '/opt/sensu/embedded/bin/check-cpu.rb',
+    event_description => 'CPU usage is too high!',
+  }
+
+  moncheck { 'check_ram':
+    command           => '/opt/sensu/embedded/bin/check-ram.rb',
+    event_description => 'The amount of free memory is too low!',
+  }
+
 }
