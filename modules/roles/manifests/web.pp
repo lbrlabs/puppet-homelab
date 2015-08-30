@@ -7,7 +7,7 @@ class roles::web inherits roles::base {
 
   apache::vhost { 'grafana.leebriggs.lan':
     serveraliases => [
-      'grafana.leebriggs.io',
+      'grafana.briggs.io',
       'grafana.leebriggs.co.uk',
     ],
     port          => '80',
