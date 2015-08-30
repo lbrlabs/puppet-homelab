@@ -5,4 +5,8 @@ class profiles::redis {
 
   diamond::collector { 'RedisCollector': }
 
+  package { 'sensu-plugins-redis':
+    ensure   => installed,
+    provider => sensu_gem,
+  }
 }
