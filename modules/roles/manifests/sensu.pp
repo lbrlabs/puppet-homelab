@@ -5,4 +5,9 @@ class roles::sensu inherits roles::base {
   include ::sensu
   include ::uchiwa
 
+  package { 'sensu-plugins-opsgenie':
+    ensure   => installed,
+    provider => sensu_gem,
+  }
+
 }

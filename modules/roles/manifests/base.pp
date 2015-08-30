@@ -19,5 +19,7 @@ class roles::base {
   class { 'profiles::users':
     stage => pre
   }
+
+  include profiles::system_checks
 }
 
