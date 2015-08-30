@@ -24,9 +24,11 @@ class { '::rabbitmq':
   }
 
   diamond::collector { 'RabbitMQCollector':
-    options => [
-      'vhosts',
-    ]
+    sections => {
+      '[vhosts]' => {
+        '*' => '*'
+      }
+    }
   }
 
 
