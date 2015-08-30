@@ -20,7 +20,6 @@ class profiles::packages {
             'bind-utils',
             'tmux',
             'gcc-c++',
-            'gcc',
             ]:
             ensure => installed
           }
