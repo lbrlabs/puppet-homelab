@@ -1,12 +1,9 @@
 ---
-#| This is eyaml edit mode. This text (lines starting with #| at the top of the
-#| file) will be removed when you save and exit.
-#|  - To edit encrypted values, change the content of the DEC(<num>)::PKCS7[]!
-#|    block.
-#|    WARNING: DO NOT change the number in the parentheses.
-#|  - To add a new encrypted value copy and paste a new block from the
-#|    appropriate example below. Note that:
-#|     * the text to encrypt goes in the square brackets
-#|     * ensure you include the exclamation mark when you copy and paste
-#|     * you must not include a number when adding a new block
-#|    e.g. ENC[PKCS7,MIICjQYJKoZIhvcNAQcDoIICfjCCAnoCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAl684QFEDCiQTb6zKzINHiwcT8DQdmpJiWBl/a0q2WpR6Bcjj4oa2TQ3KpeZ2Ph+7/G0hCyHL4QMkN+J/lLr4shqNoEJf9D0aGqPJvpRqidJlVbOHSWj7P2WmsYUeo+FRcLz1JGa+bc77fD5IpU7Qp0fRxtf7yj2UUsPzPDc354WZadMpXrPjqHMR/i3eQ2eMfH8Y12lSHQvslp/H3Y4dtKlfsA8XTzFWlZq6HRxOf++tIeyN9YI5bgKm5Fbv0az27QMq+1ykyMMxiRJ056uEPi/Ob+VrRx44ud0ncvLHBCaH3SlUmt5//h9yE0eUi3QdpeH6wLslWN3ELcZ5GoRXkTCCAU4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEGc9bt6JhWdM4CmNp8xiMSmAggEgiMgOxypAznRV3WBQEJeLvjpeI8kYnDP5HGy41gCrOH77LFDZJ0NZXdH6wkCZO4IJg75RVouBWVDSqasTJQh0jVst0l/P3zPcuo0Pwmaxt+nnLOrztntMq9Atn0hzIFRhR8Op+6I+IJQi3P2kHm2guhEHFgIZnMk1B39+On3O0rK5ZGyUUCnRFHt4YjnZmD+iJ2pUP6VFq+om8egqJUT9Vp2XdRSXSB5TpDCQ/MlkFHC5JPg/Hbo3ArkqwqLPj4Zj65QG7qgm2a/dpVM/whk4o7FZyXLQDN8bEGHzxAeO75kATmZBb3GhT8edHsOrZ7baNl+f8b1gf4n9BE498/PhcsmlBLODXpwNe8oaO45dNhiqzMgPYdhsaFGPmSwZ6Cyl]
+jira::javahome: "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.51-1.b16.el7_1.x86_64"
+jira::db: "mysql"
+jira::dbdriver: "com.mysql.jdbc.Driver"
+jira::dbtype: "mysql"
+jira::dbserver: "db.leebriggs.lan"
+jira::dbname: "jiradb"
+jira::dbuser: "jira"
+jira::dbpassword: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAh6rHI19HpJVlIjHyY1UCnm+r/tyUVkE9RcARDdKV4kSsC1kmIxU0vOTaaz8KVHNsNzQ4amLQNEq2vV6ehYONLo8NCnmSlgQBAqkdH+H6snbQalLmsHYkXb0AMuzpks5iTi5KxmB6oewMa29RzuAKxReEGBGnMe+JwCwisvNSkyiPELs33QsvHYGRarn7dbGG3KHHDhr5nCzc7o7q+s598RkaExoDBsc9zvSTmNaQyPaqPoyP+NHbZo9kxEH9QxvmZamSkVDZq1uedmDyKdnJGm9mU+jCRdqN/VGQZT9TgSIBF1KulN9YFkAk3Ync2y+9OOyoXBjJpihkB4ZMPA6fyjA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBAyQpJurtGyIzQ+zoQIl8LPgBCG3OKyapnzr7+It4mAmSEa]
