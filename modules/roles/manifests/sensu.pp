@@ -1,5 +1,7 @@
 # Set up a monitoring hosts
-class roles::sensu inherits roles::base {
+class roles::sensu (
+  $opsgenie_customer_key = 'changeme'
+)inherits roles::base {
 
   include profiles::redis
   include ::sensu
@@ -8,6 +10,17 @@ class roles::sensu inherits roles::base {
   package { 'sensu-plugins-opsgenie':
     ensure   => installed,
     provider => sensu_gem,
+  }
+
+  sensu::handler { 'opsgenie':
+    ensure     => present,
+    command    => '/opt/sensu/embedded/bin/handler-opsgenie.rb',
+    severities => ['ok', 'critical'],
+    config     => {
+      'tags'        => 'sensu',
+      'customerKey' => $opsgenie_customer_key,
+      'recipients'  => 'all',
+    }
   }
 
 }
