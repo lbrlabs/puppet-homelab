@@ -28,5 +28,9 @@ class roles::web inherits roles::base {
 
   include ::apache::mod::status
 
-  diamond::collector { 'HttpdCollector': }
+  diamond::collector { 'HttpdCollector':
+    options => {
+      'urls' => "${::fqdn} http://localhost:8080/server-status?auto",
+    },
+  }
 }
