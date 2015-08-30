@@ -8,6 +8,11 @@ class roles::base {
 
   class { 'profiles::yumrepos':
     stage => pre,
+  } ->
+  # Install packages first
+  # Some things depend on this stuff, so do it early
+  class { 'profiles::packages':
+    stage => pre
   }
   
   # Collect some base system metrics
@@ -22,10 +27,5 @@ class roles::base {
 
   include profiles::system_checks
 
-  # Install packages first
-  # Some things depend on this stuff, so do it early
-  class { 'profiles::packages':
-    stage => pre
-  }
 }
 
