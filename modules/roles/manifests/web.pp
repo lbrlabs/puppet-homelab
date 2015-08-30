@@ -17,7 +17,7 @@ class roles::web inherits roles::base {
 
   apache::vhost { 'jira.leebriggs.lan':
     serveraliases => [
-      'jira.leebriggs.io',
+      'jira.briggs.io',
       'jira.leebriggs.co.uk',
     ],
     port          => '80',
