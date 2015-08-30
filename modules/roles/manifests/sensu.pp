@@ -19,7 +19,7 @@ class roles::sensu (
     config     => {
       'tags'        => 'sensu',
       'customerKey' => $opsgenie_customer_key,
-      'recipients'  => 'all',
+      'recipients'  => 'main',
     }
   }
 
