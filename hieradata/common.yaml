@@ -14,6 +14,7 @@ sensu::use_embedded_ruby: true
 sensu::subscriptions: [ "base" ]
 sensu::sensu_plugin_version: "latest"
 sensu::client_keepalive:
+  handler: 'osgenie'
   thresholds:
     warning: "45"
     critical: "90"

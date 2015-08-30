@@ -14,7 +14,7 @@ class roles::sensu (
 
   sensu::handler { 'opsgenie':
     ensure     => present,
-    command    => '/opt/sensu/embedded/bin/handler-opsgenie.rb',
+    command    => '/opt/sensu/embedded/bin/handler-opsgenie.rb -j /etc/sensu/conf.d/handlers/opsgenie.json',
     severities => ['ok', 'critical'],
     config     => {
       'tags'        => 'sensu',
