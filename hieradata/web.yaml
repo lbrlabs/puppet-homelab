@@ -6,4 +6,5 @@ jira::dbtype: "mysql"
 jira::dbserver: "db.leebriggs.lan"
 jira::dbname: "jiradb"
 jira::dbuser: "jira"
+jira::dbport: '3306'
 jira::dbpassword: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAh6rHI19HpJVlIjHyY1UCnm+r/tyUVkE9RcARDdKV4kSsC1kmIxU0vOTaaz8KVHNsNzQ4amLQNEq2vV6ehYONLo8NCnmSlgQBAqkdH+H6snbQalLmsHYkXb0AMuzpks5iTi5KxmB6oewMa29RzuAKxReEGBGnMe+JwCwisvNSkyiPELs33QsvHYGRarn7dbGG3KHHDhr5nCzc7o7q+s598RkaExoDBsc9zvSTmNaQyPaqPoyP+NHbZo9kxEH9QxvmZamSkVDZq1uedmDyKdnJGm9mU+jCRdqN/VGQZT9TgSIBF1KulN9YFkAk3Ync2y+9OOyoXBjJpihkB4ZMPA6fyjA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBAyQpJurtGyIzQ+zoQIl8LPgBCG3OKyapnzr7+It4mAmSEa]
