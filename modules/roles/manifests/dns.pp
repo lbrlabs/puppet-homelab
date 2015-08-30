@@ -44,35 +44,14 @@ class roles::dns inherits roles::base {
     ip  => '192.168.4.6',
   }
 
-
-  dnsmasq::hostrecord { 'puppet,puppet.leebriggs.lan':
-    ip  => '192.168.4.11',
-  }
-
-  dnsmasq::hostrecord { 'monitor,monitor.leebriggs.lan':
-    ip  => '192.168.4.12',
-  }
-
   dnsmasq::hostrecord { 'web,web.leebriggs.lan':
-    ip  => '192.168.4.14',
-  }
-
-  dnsmasq::hostrecord { 'build,build.leebriggs.lan':
-    ip  => '192.168.4.16',
-  }
-
-  dnsmasq::hostrecord { 'graphs,graphs.leebriggs.lan':
-    ip  => '192.168.4.19',
+    ip  => '192.168.4.34',
   }
 
   dnsmasq::hostrecord { 'graphite,graphite.leebriggs.lan':
     ip  => '192.168.4.24',
   }
 
-
-  dnsmasq::hostrecord { 'play,play.leebriggs.lan':
-    ip  => '192.168.4.21',
-  }
 
   dnsmasq::hostrecord { 'dns1,dns1.leebriggs.lan':
     ip  => '192.168.4.23',
@@ -96,6 +75,18 @@ class roles::dns inherits roles::base {
   
   dnsmasq::hostrecord { 'foreman,foreman.leebriggs.lan':
     ip  => '192.168.4.31',
+  }
+
+  dnsmasq::cname { 'grafana,grafana.leebriggs.lan':
+    host => 'web',
+  }
+
+  dnsmasq::cname { 'jira,jira.leebriggs.lan':
+    host => 'web',
+  }
+
+  dnsmasq::cname { 'uchiwa,uchiwa.leebriggs.lan':
+    host => 'web',
   }
 
   # Reservations
