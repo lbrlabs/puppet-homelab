@@ -29,5 +29,4 @@ class roles::web inherits roles::base {
   include ::apache::mod::status
 
   diamond::collector { 'HttpdCollector': }
-
 }
