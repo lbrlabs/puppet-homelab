@@ -14,8 +14,8 @@ class roles::web inherits roles::base {
     docroot       => '/var/www/grafana',
     proxy_dest    => 'http://graphite.leebriggs.lan:3000',
     ssl           => true,
-    ssl_cert      => '/etc/ssl/star.briggs.io.cert',
-    ssl_key       => '/etc/ssl/star.briggs.io.key',
+    ssl_cert      => '/etc/ssl/star_briggs_io.cert',
+    ssl_key       => '/etc/ssl/star_briggs_io.key',
 
   }
 
@@ -29,8 +29,8 @@ class roles::web inherits roles::base {
     proxy_dest          => 'http://localhost:8080',
     proxy_preserve_host => true,
     ssl                 => true,
-    ssl_cert            => '/etc/ssl/star.briggs.io.cert',
-    ssl_key             => '/etc/ssl/star.briggs.io.key',
+    ssl_cert            => '/etc/ssl/star_briggs_io.cert',
+    ssl_key             => '/etc/ssl/star_briggs_io.key',
   }
 
   include ::apache::mod::status
