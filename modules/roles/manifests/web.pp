@@ -48,6 +48,52 @@ class roles::web inherits roles::base {
     redirect_dest   => 'https://jira.briggs.io',
   }
 
+  apache::vhost { 'movies.briggs.io':
+    serveraliases       => [
+      'movies.leebriggs.lan',
+      'movies.leebriggs.co.uk',
+    ],
+    port                => '443',
+    docroot             => '/var/www/movies',
+    proxy_dest          => 'http://192.168.4.4:5050',
+    proxy_preserve_host => true,
+    ssl                 => true,
+    ssl_cert            => '/etc/ssl/star_briggs_io.cert',
+    ssl_key             => '/etc/ssl/star_briggs_io.key',
+    ssl_proxyengine     => true,
+  }
+
+  apache::vhost { 'movies.briggs.io plaintext':
+    servername      => 'movies.briggs.io',
+    port            => 80,
+    docroot         => '/var/www/movies',
+    redirect_status => 'permanent',
+    redirect_dest   => 'https://movies.briggs.io',
+  }
+
+  apache::vhost { 'tv.briggs.io':
+    serveraliases       => [
+      'tv.leebriggs.lan',
+      'tv.leebriggs.co.uk',
+    ],
+    port                => '443',
+    docroot             => '/var/www/tv',
+    proxy_dest          => 'http://192.168.4.4:8081',
+    proxy_preserve_host => true,
+    ssl                 => true,
+    ssl_cert            => '/etc/ssl/star_briggs_io.cert',
+    ssl_key             => '/etc/ssl/star_briggs_io.key',
+    ssl_proxyengine     => true,
+  }
+
+  apache::vhost { 'tv.briggs.io plaintext':
+    servername      => 'tv.briggs.io',
+    port            => 80,
+    docroot         => '/var/www/tv',
+    redirect_status => 'permanent',
+    redirect_dest   => 'https://tv.briggs.io',
+  }
+
   include ::apache::mod::status
 
   diamond::collector { 'HttpdCollector':
