@@ -15,7 +15,14 @@ class roles::web inherits roles::base {
     ssl           => true,
     ssl_cert      => '/etc/ssl/star_briggs_io.cert',
     ssl_key       => '/etc/ssl/star_briggs_io.key',
+  }
 
+  apache::vhost { 'grafana.briggs.io plaintext':
+    servername      => 'grafana.briggs.io',
+    port            => 80,
+    docroot         => '/var/www/grafana',
+    redirect_status => 'permanent',
+    redirect_dest   => 'https://grafana.briggs.io',
   }
 
   apache::vhost { 'jira.briggs.io':
@@ -31,6 +38,14 @@ class roles::web inherits roles::base {
     ssl_cert            => '/etc/ssl/star_briggs_io.cert',
     ssl_key             => '/etc/ssl/star_briggs_io.key',
     ssl_proxyengine     => true,
+  }
+
+  apache::vhost { 'jira.briggs.io plaintext':
+    servername      => 'jira.briggs.io',
+    port            => 80,
+    docroot         => '/var/www/jira',
+    redirect_status => 'permanent',
+    redirect_dest   => 'https://jira.briggs.io',
   }
 
   include ::apache::mod::status
