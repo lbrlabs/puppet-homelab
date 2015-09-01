@@ -2,6 +2,13 @@
 class roles::web inherits roles::base {
 
   include ::jira
+  #class { '::jira':
+  #  proxy    => {
+  #    scheme    => 'https',
+  #    proxyName => 'jira.briggs.io',
+  #    proxyPort => '443',
+  #  },
+  #}
 
   include ::apache
 
