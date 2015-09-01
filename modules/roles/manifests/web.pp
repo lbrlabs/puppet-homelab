@@ -31,6 +31,7 @@ class roles::web inherits roles::base {
     ssl                 => true,
     ssl_cert            => '/etc/ssl/star_briggs_io.cert',
     ssl_key             => '/etc/ssl/star_briggs_io.key',
+    ssl_proxyengine     => true,
   }
 
   include ::apache::mod::status
