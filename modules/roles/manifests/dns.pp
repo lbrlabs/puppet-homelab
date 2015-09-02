@@ -78,15 +78,15 @@ class roles::dns inherits roles::base {
   }
 
   dnsmasq::cname { 'grafana,grafana.leebriggs.lan':
-    host => 'web',
+    hostname => 'web',
   }
 
   dnsmasq::cname { 'jira,jira.leebriggs.lan':
-    host => 'web',
+    hostname => 'web',
   }
 
   dnsmasq::cname { 'uchiwa,uchiwa.leebriggs.lan':
-    host => 'web',
+    hostname => 'web',
   }
 
   # Reservations
