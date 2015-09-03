@@ -94,6 +94,31 @@ class roles::web inherits roles::base {
     redirect_dest   => 'https://tv.briggs.io',
   }
 
+  $plex_fragment = '<Location "/:/websockets/notifications">
+      ProxyPass wss://192.168.4.4:32400/:/websockets/notifications
+      ProxyPassReverse wss://192.168.4.4:32400/:/websockets/notifications
+      </Location>'
+
+  apache::vhost { 'plex.briggs.io':
+    servername          => 'plex.briggs.io',
+    port                => '443',
+    docroot             => '/var/www/plex',
+    proxy_dest          => 'http://192.168.4.4:32400',
+    proxy_preserve_host => true,
+    ssl                 => true,
+    ssl_cert            => '/etc/ssl/star_briggs_io.cert',
+    ssl_key             => '/etc/ssl/star_briggs_io.key',
+    ssl_proxyengine     => true,
+    rewrites            => [
+        {
+          comment      => 'Plex',
+          rewrite_cond => ['%{REQUEST_URI} !^/web', '%{HTTP:X-Plex-Device} ^$'],
+          rewrite_rule => ['^/$ /web/index.html [R,L]'],
+        },
+    ],
+    custom_fragment     => $plex_fragment,
+  }
+
   include ::apache::mod::status
 
   diamond::collector { 'HttpdCollector':
