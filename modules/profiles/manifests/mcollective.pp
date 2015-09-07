@@ -7,10 +7,6 @@ class profiles::mcollective {
       package => true,
   }
 
-  mcollective::plugin {'facter-facts':
-    package => true,
-  }
-
   mcollective::plugin {'service':
     package => true,
   }
