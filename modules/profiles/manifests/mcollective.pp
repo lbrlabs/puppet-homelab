@@ -1,5 +1,5 @@
 # MCollective + plugins
-class profile::mcollective {
+class profiles::mcollective {
 
   include ::mcollective
 
