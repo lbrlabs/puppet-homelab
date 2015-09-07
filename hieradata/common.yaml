@@ -29,3 +29,4 @@ mcollective::client: true
 mcollective::collectives:
   - "default"
   - "%{::virtual}"
+  - "%{role}"
