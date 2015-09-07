@@ -28,5 +28,3 @@ mcollective::middleware_password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAx
 mcollective::client: true
 mcollective::collectives:
   - "mcollective"
-  - "%{::virtual}"
-  - "%{role}"
