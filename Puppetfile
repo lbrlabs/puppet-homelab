@@ -79,3 +79,7 @@ mod 'jira',
 mod 'mcollective',
   :git    => 'https://github.com/puppet-community/puppet-mcollective.git',
   :commit => '9b285776ad2465d35da1c7a9e62f033ff6440762'
+
+mod 'datacat',
+  :git    => 'https://github.com/richardc/puppet-datacat.git',
+  :commit => '5a6114cd41823160bdb01dad6eb0e2af85a8fa69'
