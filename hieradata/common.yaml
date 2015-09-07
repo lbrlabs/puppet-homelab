@@ -27,6 +27,6 @@ mcollective::middleware_user: "mcollective"
 mcollective::middleware_password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAjcAmYZUoPZDWUtGPUOFSvcWS1eyCwg6LyepvNk4nj+1lLC4tgWVpAcahAw3pKI/nHzyDwmzsqU6jAgU/miBhawcsDspkRs2Vb+78hE5Umy636BQAd++nuS0qi65ZF697R2KHIQTR3wfHINMjsxgRdtonQPek2CftTNAfdLl6bYnsfFgZlLdzRDzU3fYabp8iYQSBk5AirsdxI9k6VHIPDv8CjZQjfQdLO1h/kREZokBVGjMJsu0ymIbg9bYcNDX/+ttuK5VJLBb8FOlRFGje8KbYtpk6YUO35s0ObZCdquhvfJ4JSZ+22CuKsCzgL28u8jWeMxN7eE7ptDwmf+xmRDA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBAr8rYKGP7HI0/amszs1jHxgBBN3ts8FeUe1PewPv5zBP2o]
 mcollective::client: true
 mcollective::collectives:
-  - "default"
+  - "mcollective"
   - "%{::virtual}"
   - "%{role}"
