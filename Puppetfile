@@ -65,10 +65,17 @@ mod 'uchiwa',
   :git    => 'https://github.com/Yelp/puppet-uchiwa.git',
   :commit => 'd1bf90bef37973371f5d619e3ca7e77b0481b9d3'
 
+# DNSMasq Module
 mod 'dnsmasq',
   :git    => 'https://github.com/rlex/puppet-dnsmasq.git',
   :commit => 'd37d48012df8115132694b0f9c9d0fff15a4fb3c'
 
+# JIRA Module
 mod 'jira',
   :git    => 'https://github.com/puppet-community/puppet-jira.git',
   :commit => 'f402380435f3cb654e70dcb0b4031fb4cc1fa543'
+
+# Mcollective Module
+mod 'mcollective',
+  :git    => 'https://github.com/puppet-community/puppet-mcollective.git',
+  :commit => '9b285776ad2465d35da1c7a9e62f033ff6440762'

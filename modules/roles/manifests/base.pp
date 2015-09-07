@@ -27,5 +27,7 @@ class roles::base {
 
   include profiles::system_checks
 
+  include ::mcollective
+
 }
 
