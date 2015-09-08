@@ -28,3 +28,13 @@ mcollective::middleware_password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAx
 mcollective::client: true
 mcollective::collectives:
   - "mcollective"
+consul::pretty_config: true
+consul::purge_config_dir: true
+consul::config_hash:
+  datacenter: "home"
+  client_addr: "0.0.0.0"
+  node_name: "%{::fqdn}"
+  bootstrap_expect: 3
+  server: true
+  data_dir: "/opt/consul"
+  ui_dir: "/opt/consul/ui"

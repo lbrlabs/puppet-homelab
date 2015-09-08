@@ -29,5 +29,7 @@ class roles::base {
 
   include profiles::mcollective
 
+  include profiles::consul
+
 }
 
