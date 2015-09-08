@@ -29,6 +29,7 @@ mcollective::client: true
 mcollective::collectives:
   - "mcollective"
 consul::pretty_config: true
+consul::service_ensure: "stopped"
 consul::purge_config_dir: true
 consul::config_hash:
   datacenter: "home"
