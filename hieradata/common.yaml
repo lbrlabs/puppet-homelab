@@ -38,3 +38,4 @@ consul::config_hash:
   server: true
   data_dir: "/opt/consul"
   ui_dir: "/opt/consul/ui"
+  recursors: ["192.168.4.23"]
