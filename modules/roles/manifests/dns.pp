@@ -77,6 +77,10 @@ class roles::dns inherits roles::base {
     ip  => '192.168.4.31',
   }
 
+  dnsmasq::hostrecord { 'git,git.leebriggs.lan':
+    ip  => '192.168.4.40',
+  }
+
   dnsmasq::cname { 'grafana,grafana.leebriggs.lan':
     hostname => 'web',
   }
