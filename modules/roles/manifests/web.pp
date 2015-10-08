@@ -119,6 +119,28 @@ class roles::web inherits roles::base {
     custom_fragment     => $plex_fragment,
   }
 
+  apache::vhost { 'git.briggs.io':
+    serveraliases       => [
+      'git.leebriggs.co.uk',
+    ],
+    port                => '443',
+    docroot             => '/var/www/git',
+    proxy_dest          => 'http://192.168.4.40:5555',
+    proxy_preserve_host => true,
+    ssl                 => true,
+    ssl_cert            => '/etc/ssl/star_briggs_io.cert',
+    ssl_key             => '/etc/ssl/star_briggs_io.key',
+    ssl_proxyengine     => true,
+  }
+
+  apache::vhost { 'git.briggs.io plaintext':
+    servername      => 'git.briggs.io',
+    port            => 80,
+    docroot         => '/var/www/git',
+    redirect_status => 'permanent',
+    redirect_dest   => 'https://git.briggs.io',
+  }
+
   include ::apache::mod::status
 
   diamond::collector { 'HttpdCollector':
