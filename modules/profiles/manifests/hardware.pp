@@ -5,7 +5,7 @@ class profiles::hardware {
   #diamond::collector { 'DiskUsageCollector': }
 
   diamond::collector { 'VZBCCollector':
-    sname  => 'vzbc',
+    name  => 'vzbc',
     options => [
       'method=Threaded',
     ],
