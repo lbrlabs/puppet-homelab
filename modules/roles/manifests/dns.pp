@@ -4,29 +4,6 @@ class roles::dns inherits roles::base {
   include ::dnsmasq
 
 
-  # Adding DHCP options
-  dnsmasq::dhcp { 'dhcp':
-    dhcp_start => '192.168.4.101',
-    dhcp_end   => '192.168.4.199',
-    netmask    => '255.255.255.0',
-    lease_time => '24h'
-  }
-
-  dnsmasq::dhcpoption { 'gateway':
-    content => '192.168.4.1',
-    option  => 'option:router'
-  }
-
-  dnsmasq::dhcpoption { 'domainname':
-    content => 'leebriggs.lan',
-    option  => 'option:domain-name'
-  }
-
-  dnsmasq::dhcpoption { 'dnsserver':
-    content => '192.168.4.23',
-    option  => 'option:dns-server'
-  }
-  
   # Start DNS records
   dnsmasq::hostrecord { 'gateway,gateway.leebriggs.lan':
     ip  => '192.168.4.1',
