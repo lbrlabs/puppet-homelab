@@ -4,20 +4,20 @@
 class roles::base {
 
   # We want puppet everywhere
-  include profiles::puppetagent
+  include ::profiles::puppetagent
 
-  class { 'profiles::yumrepos':
+  class { '::profiles::yumrepos':
     stage => pre,
   } ->
   # Install packages first
   # Some things depend on this stuff, so do it early
-  class { 'profiles::packages':
+  class { '::profiles::packages':
     stage => pre
   }
   
   # Collect some base system metrics
   # TODO: Include diamond in here?
-  include profiles::system_metrics
+  include ::profiles::system_metrics
 
   include ::sensu
 
@@ -25,11 +25,13 @@ class roles::base {
     stage => pre
   }
 
-  include profiles::system_checks
+  include ::profiles::system_checks
 
-  include profiles::mcollective
+  include ::profiles::mcollective
 
-  include profiles::consul
+  include ::profiles::consul
+
+  include ::resolv_conf
 
 }
 
