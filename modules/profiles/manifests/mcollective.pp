@@ -16,12 +16,18 @@ class profiles::mcollective {
   }
 
   # /etc/puppet/manifests/site.pp
-  file{ '/etc/mcollective/facts.yaml':
-    owner    => root,
-    group    => root,
-    mode     => '0400',
-    loglevel => debug, # reduce noise in Puppet reports
-    content  => inline_template('<%= scope.to_hash.reject { |k,v| k.to_s =~ /(uptime_seconds|timestamp|free)/ }.to_yaml %>'), # exclude rapidly changing facts
+  #file{ '/etc/mcollective/facts.yaml':
+  #  owner    => root,
+  #  group    => root,
+  #  mode     => '0400',
+  #  loglevel => debug, # reduce noise in Puppet reports
+  #  content  => inline_template('<%= scope.to_hash.reject { |k,v| k.to_s =~ /(uptime_seconds|timestamp|free)/ }.to_yaml %>'), # exclude rapidly changing facts
+  #}
+
+  cron { 'generate_mcollective_facts':
+    command => '/usr/bin/facter --puppet --yaml > /etc/mcollective/facts.yaml',
+    user    => 'root',
+    minute  => fqdn_rand(60),
   }
 
 }
