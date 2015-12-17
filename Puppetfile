@@ -93,3 +93,7 @@ mod 'consul',
 mod 'resolv_conf',
   :git    => 'https://github.com/saz/puppet-resolv_conf.git',
   :commit => 'd3c16527b1efb3a820c3b0250748da1d3ca04da7'
+
+mod 'gitlab'.
+  :git    => 'https://github.com/vshn/puppet-gitlab.git',
+  :commit => '15c90e3b21fc165ca4033843d81c023d85340329'
