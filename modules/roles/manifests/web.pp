@@ -25,7 +25,7 @@ class roles::web (
     ssl_chain             => $ssl_chain,
     ssl_protocol          => $ssl_protocol,
     ssl_honorcipher_order => $ssl_honorcipherorder,
-    ssl_cipher            => $ssl_cipher.
+    ssl_cipher            => $ssl_cipher,
   }
 
   apache::vhost { 'grafana.briggs.io plaintext':
