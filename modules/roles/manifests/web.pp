@@ -24,7 +24,7 @@ class roles::web (
     ssl_key               => $ssl_privkey_path,
     ssl_chain             => $ssl_chain,
     ssl_protocol          => $ssl_protocol,
-    ssl_honorcipher_order => $ssl_honorcipherorder,
+    ssl_honorcipherorder  => $ssl_honorcipherorder,
     ssl_cipher            => $ssl_cipher,
   }
 
