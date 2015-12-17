@@ -3,23 +3,29 @@ class roles::web (
   $ssl_cert_path = "/etc/letsencrypt/live/briggs.io/fullchain.pem",
   $ssl_privkey_path = "/etc/letsencrypt/live/briggs.io/privkey.pem",
   $ssl_chain = "/etc/letsencrypt/live/briggs.io/lets-encrypt-x1-cross-signed.pem",
+  $ssl_protocol = "ALL -SSLv2 -SSLv3",
+  $ssl_honorcipherorder = "true",
+  $ssl_cipher = "ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS"
 )inherits roles::base {
 
   include ::jira
   include ::apache
 
   apache::vhost { 'grafana.briggs.io':
-    serveraliases => [
+    serveraliases         => [
       'grafana.leebriggs.lan',
       'grafana.leebriggs.co.uk',
     ],
-    port          => '443',
-    docroot       => '/var/www/grafana',
-    proxy_dest    => 'http://graphite.leebriggs.lan:3000',
-    ssl           => true,
-    ssl_cert      => $ssl_cert_path,
-    ssl_key       => $ssl_privkey_path,
-    ssl_chain     => $ssl_chain,
+    port                  => '443',
+    docroot               => '/var/www/grafana',
+    proxy_dest            => 'http://graphite.leebriggs.lan:3000',
+    ssl                   => true,
+    ssl_cert              => $ssl_cert_path,
+    ssl_key               => $ssl_privkey_path,
+    ssl_chain             => $ssl_chain,
+    ssl_protocol          => $ssl_protocol,
+    ssl_honorcipher_order => $ssl_honorcipherorder,
+    ssl_cipher            => $ssl_cipher.
   }
 
   apache::vhost { 'grafana.briggs.io plaintext':
