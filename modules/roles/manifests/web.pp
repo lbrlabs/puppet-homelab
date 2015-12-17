@@ -2,6 +2,7 @@
 class roles::web (
   $ssl_cert_path = "/etc/letsencrypt/live/briggs.io/fullchain.pem",
   $ssl_privkey_path = "/etc/letsencrypt/live/briggs.io/privkey.pem",
+  $ssl_chain = "/etc/letsencrypt/live/briggs.io/lets-encrypt-x1-cross-signed.pem",
 )inherits roles::base {
 
   include ::jira
@@ -18,6 +19,7 @@ class roles::web (
     ssl           => true,
     ssl_cert      => $ssl_cert_path,
     ssl_key       => $ssl_privkey_path,
+    ssl_chain     => $ssl_chain,
   }
 
   apache::vhost { 'grafana.briggs.io plaintext':
@@ -40,6 +42,7 @@ class roles::web (
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
     ssl_key             => $ssl_privkey_path,
+    ssl_chain     => $ssl_chain,
     ssl_proxyengine     => true,
   }
 
@@ -63,6 +66,7 @@ class roles::web (
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
     ssl_key             => $ssl_privkey_path,
+    ssl_chain           => $ssl_chain,
     ssl_proxyengine     => true,
   }
 
@@ -86,6 +90,7 @@ class roles::web (
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
     ssl_key             => $ssl_privkey_path,
+    ssl_chain           => $ssl_chain,
     ssl_proxyengine     => true,
   }
 
@@ -111,6 +116,7 @@ class roles::web (
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
     ssl_key             => $ssl_privkey_path,
+    ssl_chain           => $ssl_chain,
     ssl_proxyengine     => true,
     rewrites            => [
         {
@@ -133,6 +139,7 @@ class roles::web (
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
     ssl_key             => $ssl_privkey_path,
+    ssl_chain           => $ssl_chain,
     ssl_proxyengine     => true,
   }
 
