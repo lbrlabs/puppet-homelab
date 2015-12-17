@@ -1,0 +1,8 @@
+---
+etcd::ensure: 'latest'
+etcd::etcd_name: "%{::fqdn}"
+etcd::listen_peer_urls: "http://0.0.0.0:2380"
+etcd::listen_client_urls: "http://0.0.0.0:2380"
+etcd::initial_advertise_peer_urls: "%{::fqdn}:2380,http://127.0.0.1:2379"
+etcd::initial_cluster: [ "etcd1.leebriggs.lan=http://etcd1.leebriggs.lan:2380", "etcd2.leebriggs.lan=http://etcd2.leebriggs.lan:2380", "etcd3.leebriggs.lan=http://etcd3.leebriggs.lan:2380" ]
+etcd::initial_cluster_token: "leebriggs"
