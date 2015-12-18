@@ -90,10 +90,17 @@ mod 'consul',
   :git    => 'https://github.com/solarkennedy/puppet-consul.git',
   :commit => '32b264e2ceda369ae88254ec46dfafb08acf9c55'
 
+# Resolv_conf module
 mod 'resolv_conf',
   :git    => 'https://github.com/saz/puppet-resolv_conf.git',
   :commit => 'd3c16527b1efb3a820c3b0250748da1d3ca04da7'
 
+# Gitlab Module
 mod 'gitlab',
   :git    => 'https://github.com/vshn/puppet-gitlab.git',
   :commit => '15c90e3b21fc165ca4033843d81c023d85340329'
+
+# etcd module
+mod 'etcd',
+  :git    => 'https://github.com/cristifalcas/puppet-etcd.git',
+  :commit => '37b5c6fe8f15ae6c76346f2ef4a65025167773de'
