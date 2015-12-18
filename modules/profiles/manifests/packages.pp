@@ -21,7 +21,6 @@ class profiles::packages {
             'tmux',
             'gcc-c++',
             'vim',
-            'tmux',
             ]:
             ensure => installed
           }
