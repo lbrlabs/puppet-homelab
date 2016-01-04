@@ -7,7 +7,13 @@ class roles::logs (
 
   include ::mongodb
   include ::elasticsearch
-  ::elasticsearch::instance { 'graylog2': }
+  ::elasticsearch::instance { 'graylog2': 
+    config => { 
+      'node.name' => $::fqdn,
+      'discovery.zen.ping.multicast.enabled' => 'false',
+      'discovery.zen.ping.unicast.hosts' => 'logs.leebriggs.lan:9300'
+    }
+  }
 
   ::elasticsearch::plugin{'mobz/elasticsearch-head':
     instances  => 'graylog2'
