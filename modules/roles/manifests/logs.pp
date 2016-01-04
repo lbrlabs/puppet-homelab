@@ -24,8 +24,11 @@ class roles::logs (
     version => '1.3'
   } ->
   class { 'graylog2::server':
-    password_secret    => $graylog2_password_secret,
-    root_password_sha2 => $graylog2_root_password_sha2,
+    password_secret                                       => $graylog2_password_secret,
+    root_password_sha2                                    => $graylog2_root_password_sha2,
+    elasticsearch_discovery_zen_ping_multicast_enabled    => false,
+    elasticsearch_discovery_zen_ping_unicast_hosts        => '192.168.4.10:9300',
+    elasticsearch_shards                                  => '1',
   } ->
   class { 'graylog2::web':
     application_secret => $graylog2_application_secret,
