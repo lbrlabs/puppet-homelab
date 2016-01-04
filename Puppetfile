@@ -110,6 +110,11 @@ mod 'elasticsearch',
   :commit => '785afdc9783a2d4e79584514b1b6fb6c223a32ba'
 
 # Graylog2
-mod 'Graylog2',
+mod 'graylog2',
   :git    => 'https://github.com/Graylog2/graylog2-puppet.git',
   :commit => '0f4b5302e9c6419a980636691df66d5d7c2019b3'
+
+# Java module
+mod 'java',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-java.git',
+  :commit => 'aee0f6bc3f8683fd56dd3d5dce8390965f3a0d89'
