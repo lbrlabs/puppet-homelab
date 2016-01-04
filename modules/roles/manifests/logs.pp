@@ -14,6 +14,9 @@ class roles::logs (
       'discovery.zen.ping.unicast.hosts'     => 'logs.leebriggs.lan:9300',
       'cluster.name'                         => 'graylog2'
     }
+    init_defaults => { 
+      'MAX_OPEN_FILES' => '65535',
+    }
   }
 
   ::elasticsearch::plugin{'mobz/elasticsearch-head':
