@@ -9,4 +9,8 @@ class roles::logs inherits roles::base {
     instances  => 'graylog2'
   }
 
+  class {'graylog2::repo':
+    version => '1.3'
+  }
+
 }
