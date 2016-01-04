@@ -2,4 +2,4 @@
 elasticsearch::version: '1.7.4'
 elasticsearch::manage_repo: true
 elasticsearch::java_install: true
-elasticsearch::repo_version: '1.x'
+elasticsearch::repo_version: '1.7'
