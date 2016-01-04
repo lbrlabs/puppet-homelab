@@ -9,9 +9,10 @@ class roles::logs (
   include ::elasticsearch
   ::elasticsearch::instance { 'graylog2': 
     config => { 
-      'node.name' => $::fqdn,
+      'node.name'                            => $::fqdn,
       'discovery.zen.ping.multicast.enabled' => 'false',
-      'discovery.zen.ping.unicast.hosts' => 'logs.leebriggs.lan:9300'
+      'discovery.zen.ping.unicast.hosts'     => 'logs.leebriggs.lan:9300',
+      'cluster.name'                         => 'graylog2'
     }
   }
 
