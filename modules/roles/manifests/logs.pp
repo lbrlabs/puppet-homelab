@@ -2,5 +2,6 @@
 class roles::logs inherits roles::base {
 
   include ::mongodb
+  include ::elasticsearch
 
 }
