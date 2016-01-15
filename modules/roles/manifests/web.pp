@@ -151,9 +151,6 @@ class roles::web (
   }
 
   apache::vhost { 'logs.briggs.io':
-    serveraliases       => [
-      'logs.leebriggs.lan',
-    ],
     port                => '443',
     docroot             => '/var/www/logs',
     proxy_dest          => 'http://192.168.4.10:3000',
