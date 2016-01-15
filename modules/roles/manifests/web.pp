@@ -153,7 +153,7 @@ class roles::web (
   apache::vhost { 'logs.briggs.io':
     port                => '443',
     docroot             => '/var/www/logs',
-    proxy_dest          => 'http://192.168.4.10:3000',
+    proxy_dest          => 'http://192.168.4.10:9000',
     proxy_preserve_host => true,
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
