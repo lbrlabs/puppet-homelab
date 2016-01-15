@@ -37,5 +37,4 @@ class roles::logs (
   class { 'graylog2::web':
     application_secret => $graylog2_application_secret,
   }
-
 }
