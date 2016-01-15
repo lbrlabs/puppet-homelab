@@ -6,6 +6,7 @@ class roles::logs (
 ) inherits roles::base {
 
   include ::mongodb
+  include ::java
 
   class { 'graylog2::repo':
     version => '1.3'
