@@ -98,3 +98,27 @@ mod 'resolv_conf',
 mod 'etcd',
   :git    => 'https://github.com/cristifalcas/puppet-etcd.git',
   :commit => '37b5c6fe8f15ae6c76346f2ef4a65025167773de'
+
+# mongodb
+mod 'mongodb',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-mongodb.git',
+  :commit => '3bcfc75229c4faffe5ccfe9caf1278a54ef0f7cc'
+
+# Elasticsearch
+mod 'elasticsearch',
+  :git    => 'https://github.com/elastic/puppet-elasticsearch.git',
+  :commit => '785afdc9783a2d4e79584514b1b6fb6c223a32ba'
+
+# Graylog2
+mod 'graylog2',
+  :git    => 'https://github.com/Graylog2/graylog2-puppet.git',
+  :commit => '0f4b5302e9c6419a980636691df66d5d7c2019b3'
+
+# Java module
+mod 'java',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-java.git',
+  :commit => 'aee0f6bc3f8683fd56dd3d5dce8390965f3a0d89'
+
+mod 'yum',
+  :git    => 'https://github.com/CERIT-SC/puppet-yum.git',
+  :commit => 'c54d3c4ab5aa6d3e82b919e350202136086bc12c'
