@@ -16,4 +16,8 @@ class roles::elasticsearch inherits roles::base {
     },
   }
 
+  ::elasticsearch::plugin{'mobz/elasticsearch-head':
+    instances  => 'graylog2'
+  }
+
 }
