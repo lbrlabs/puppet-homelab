@@ -1,5 +1,5 @@
 # Adding an elasticsearch role
-class roles::logs inherits roles::base {
+class roles::elasticsearch inherits roles::base {
 
   include ::elasticsearch
 
