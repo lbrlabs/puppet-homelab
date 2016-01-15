@@ -7,7 +7,7 @@ class roles::elasticsearch inherits roles::base {
     config        => {
       'node.name'                            => $::fqdn,
       'discovery.zen.ping.multicast.enabled' => 'false',  # lint:ignore:quoted_booleans
-      'discovery.zen.ping.unicast.hosts'     => 'es1.leebriggs.lan:9300',
+      'discovery.zen.ping.unicast.hosts'     => 'es1.leebriggs.lan:9300,es2.leebriggs.lan:9300,es3.leebriggs.lan:9300',
       'cluster.name'                         => 'graylog2',
       'bootstrap.mlockall'                   => 'true', # lint:ignore:quoted_booleans
     },
