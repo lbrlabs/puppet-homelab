@@ -33,7 +33,7 @@ class roles::base {
 
   include ::resolv_conf
 
-  include ::rsyslog
+  include ::rsyslog::client
 
 }
 
