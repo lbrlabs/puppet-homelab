@@ -4,8 +4,8 @@ rsyslog::client::remote_type: "udp"
 rsyslog::client::log_local: true
 rsyslog::client::port: "5514"
 rsyslog::client::log_templates:
-  name: "RFC3164fmt"
-  template: "<%PRI%>%TIMESTAMP% %HOSTNAME% %syslogtag%%msg%"
+  - name: "RFC3164fmt"
+    template: "<%PRI%>%TIMESTAMP% %HOSTNAME% %syslogtag%%msg%"
 rsyslog::client::remote_forward_format: "RFC3164fmt"
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
 puppet::agent::run_interval: "60m"
