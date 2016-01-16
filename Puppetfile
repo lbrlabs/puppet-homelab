@@ -119,6 +119,12 @@ mod 'java',
   :git    => 'https://github.com/puppetlabs/puppetlabs-java.git',
   :commit => 'aee0f6bc3f8683fd56dd3d5dce8390965f3a0d89'
 
+# Yum module
 mod 'yum',
   :git    => 'https://github.com/CERIT-SC/puppet-yum.git',
   :commit => 'c54d3c4ab5aa6d3e82b919e350202136086bc12c'
+
+# rsyslog module
+mod 'rsyslog',
+  :git    => 'https://github.com/saz/puppet-rsyslog.git',
+  :commit => '1060bb12493b46239250619688d7e3cbd7212143',
