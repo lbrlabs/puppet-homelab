@@ -2,6 +2,7 @@
 rsyslog::client::log_remote: true
 rsyslog::client::remote_type: "udp"
 rsyslog::client::log_local: true
+rsyslog::client::port: "5514"
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
 puppet::agent::run_interval: "60m"
 resolv_conf::nameservers: [ "192.168.4.1", "8.8.8.8"]
