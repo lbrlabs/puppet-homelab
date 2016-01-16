@@ -2,6 +2,7 @@
 rsyslog::client::log_remote: true
 rsyslog::client::remote_type: "udp"
 rsyslog::client::log_local: true
+rsyslog::client::host: "logs.leebriggs.lan"
 rsyslog::client::port: "5514"
 rsyslog::client::log_templates:
   - name: "RFC3164fmt"
