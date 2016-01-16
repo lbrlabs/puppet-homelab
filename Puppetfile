@@ -127,4 +127,4 @@ mod 'yum',
 # rsyslog module
 mod 'rsyslog',
   :git    => 'https://github.com/saz/puppet-rsyslog.git',
-  :commit => '1060bb12493b46239250619688d7e3cbd7212143',
+  :commit => '1060bb12493b46239250619688d7e3cbd7212143'
