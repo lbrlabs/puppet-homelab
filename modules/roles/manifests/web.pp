@@ -5,7 +5,7 @@ class roles::web (
   $ssl_chain = '/etc/letsencrypt/live/briggs.io/lets-encrypt-x1-cross-signed.pem',
   $ssl_protocol = 'ALL -SSLv3',
   $ssl_honorcipherorder = 'On',
-  $ssl_cipher = 'ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS"'
+  $ssl_cipher = '"ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS"'
 )inherits roles::base {
 
   include ::jira
