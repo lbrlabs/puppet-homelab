@@ -18,3 +18,9 @@ gitlab::gitlab_rails:
       args:
         access_type: "offline"
         approval_prompt: ""
+    - name: "github"
+      app_id: "dfaf3e8031afe8b1b1b7"
+      app_secret: ENC[PKCS7,MIIBmQYJKoZIhvcNAQcDoIIBijCCAYYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAdPiRrgEzCdS6UI5bnWGkhFCOtbsZ+J1LOqK61EdxO5y3ifWZ/niqMg/CSmOJU0qAJbrGwvkNZY5t3xhSVEt7hLUi9taqyzXtMq1cAg1HWFKowa9A+QK6dDpqiLFJUQNyEl9I9i9KCERq0gPQCU+/fqd/l7N+EmnY4H8BqL5EMPjayXF2ZadS8Q8B6DjV9p+HELaGZv9p5ck5r26rxA9apNANlnR1DCaa9YkZe7neQF/+o9F01hslWbnjlUKK7igSu+59dNmll21ymcpVpD3iMuNlpSINZsgAhZc+9ZL1N2EAA8DaneOHZ2yOVBEbK75bmUEZ5EcAdWGlLdN5Fc1GaTBcBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBQzZh424sKNlAjRLuriVH7gDCTj9VfsUgdOUCFmGGMbgFZ1ltt6bJE7Lix9pSMDypUBkgmqb87nQLJnKDSkCW8Dro=]
+      url: "https://github.com"
+      args:
+        scope: "user:email"
