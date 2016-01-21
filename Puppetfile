@@ -90,9 +90,15 @@ mod 'consul',
   :git    => 'https://github.com/solarkennedy/puppet-consul.git',
   :commit => '32b264e2ceda369ae88254ec46dfafb08acf9c55'
 
+# Resolv_conf module
 mod 'resolv_conf',
   :git    => 'https://github.com/saz/puppet-resolv_conf.git',
   :commit => 'd3c16527b1efb3a820c3b0250748da1d3ca04da7'
+
+# Gitlab Module
+mod 'gitlab',
+  :git    => 'https://github.com/vshn/puppet-gitlab.git',
+  :commit => '1bf5e8cf90bc10c86c17764f453649e5c1bb9992'
 
 # etcd module
 mod 'etcd',
@@ -128,3 +134,8 @@ mod 'yum',
 mod 'rsyslog',
   :git    => 'https://github.com/saz/puppet-rsyslog.git',
   :commit => '1060bb12493b46239250619688d7e3cbd7212143'
+
+# Gitlab Mirrors
+mod 'gitlab_mirrors',
+  :git    => 'https://github.com/logicminds/gitlab_mirrors.git',
+  :commit => '340d7f80ec8881bb3e59f4752469d3f52c9414d5'

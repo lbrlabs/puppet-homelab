@@ -133,13 +133,17 @@ class roles::web (
   apache::vhost { 'git.briggs.io':
     port                => '443',
     docroot             => '/var/www/git',
-    proxy_dest          => 'http://192.168.4.40:5555',
+    proxy_dest          => 'http://192.168.4.25:8080',
     proxy_preserve_host => true,
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
     ssl_key             => $ssl_privkey_path,
     ssl_chain           => $ssl_chain,
     ssl_proxyengine     => true,
+    request_headers     => [
+      'set X-FORWARDED_PROTO "https"',
+      'set X-Forwarded-Ssl on',
+    ],
   }
 
   apache::vhost { 'git.briggs.io plaintext':
