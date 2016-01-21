@@ -98,7 +98,7 @@ mod 'resolv_conf',
 # Gitlab Module
 mod 'gitlab',
   :git    => 'https://github.com/vshn/puppet-gitlab.git',
-  :commit => '15c90e3b21fc165ca4033843d81c023d85340329'
+  :commit => '1bf5e8cf90bc10c86c17764f453649e5c1bb9992'
 
 # etcd module
 mod 'etcd',
