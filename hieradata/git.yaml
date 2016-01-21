@@ -1,4 +1,9 @@
 ---
+gitlab_mirrors::gitlab_mirror_user_token: "JiZVhx1LLHTPemfztHr-"
+gitlab_mirrors::gitlab_url: "https://git.briggs.io"
+gitlab_mirrors::install_dependencies: false
+gitlab_mirrors::mirror_list_repo: "git@gitlab.leebriggs.lan:mirrors/mirror_list.git"
+gitlab_mirrors::cron_environment: "PATH=/opt/gitlab/embedded/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin"
 gitlab::external_url: 'https://git.briggs.io'
 gitlab::nginx:
   enable: false
