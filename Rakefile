@@ -22,7 +22,6 @@ PuppetLint.configuration.with_filename = true
 PuppetLint.configuration.ignore_paths = exclude_paths
 PuppetLint.configuration.send("disable_80chars")
 PuppetSyntax.exclude_paths = exclude_paths
-PuppetSyntax.future_parser = true
 PuppetSyntax.hieradata_paths = ["hieradata/*.yaml"]
 
 desc "Run syntax, lint, and spec tests."
