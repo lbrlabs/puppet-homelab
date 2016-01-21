@@ -1,0 +1,6 @@
+---
+gitlab::external_url: 'https://git.briggs.io'
+gitlab::nginx:
+  enable: false
+gitlab::unicorn:
+  listen: '0.0.0.0'

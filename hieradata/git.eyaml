@@ -1,5 +1,4 @@
 ---
-gitlab::external_url: 'https://git.briggs.io'
 gitlab::gitlab_rails:
   time_zone: 'UTC'
   gitlab_email_from: "noreply@briggs.io"
@@ -14,8 +13,4 @@ gitlab::gitlab_rails:
       args:
         access_type: "offline"
         approval_prompt: ""
-gitlab::nginx:
-  enable: false
-gitlab::unicorn:
-  listen: '0.0.0.0'
   
