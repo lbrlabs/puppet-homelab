@@ -17,6 +17,7 @@ group :development, :unit_tests do
   gem 'metadata-json-lint',                               :require => false
   gem 'puppet-blacksmith',                                :require => false
   gem 'rest-client', "1.6.8",                             :require => false
+  gem 'mdl',                                              :require => false
 end
 
 group :development do
