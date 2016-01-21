@@ -4,6 +4,9 @@ bundler_args: --without development
 script: "bundle install && bundle exec rake test SPEC_OPTS='--format documentation'"
 cache: bundler
 sudo: false
+branches:
+  only:
+    - production
 matrix:
   fast_finish: true
   include:
