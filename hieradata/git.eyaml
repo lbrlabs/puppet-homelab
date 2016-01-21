@@ -1,0 +1,21 @@
+---
+gitlab::external_url: 'https://git.briggs.io'
+gitlab::gitlab_rails:
+  time_zone: 'UTC'
+  gitlab_email_from: "noreply@briggs.io"
+  gitlab_ssh_host: "gitlab.leebriggs.lan"
+  omniauth_enabled: true
+  omniauth_allow_single_sign_on: true
+  omniauth_block_auto_created_users: true
+  omniauth_providers:
+    - name: "google_oauth2"
+      app_id: "1046141768922-9tmq5f7d21cvr4b4sk5la1otaoup6nhe.apps.googleusercontent.com"
+      app_secret: ENC[PKCS7,MIIBiQYJKoZIhvcNAQcDoIIBejCCAXYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAkDMjfPVnGzBX+8HTANCHWJcsAnEzeCZELTAHSikARC0jLNKf/WVIqydETqLeODu87MkRUuMJuaEo98Mrp/hVtvskcUraeydL4j1p8T0HmW/ou61Y7yJY9AinoG6IBhYUFQIp5ApQspm5WmkZxSAn/MsMk9ys2gArsKR+kbdXabGl1/nDAqfw5KhMcgufMkL5nHiaHwwbvzu/DY2ueczMCM+WO09GTOH4Q3ortQdkHFNEX3UjtsJJxwPedehvQBb+MkQrlfLE8U0E6+Bh0V/5uL28nwgiVsQwbcGUdw9zj+m2F6RtkguSuX4m3iMxAPSGd5l3+ovpvFHpKQ6tNJEm0zBMBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBABvXBl7BlHCKr50HNzjZN+gCAlatal6zsBNe49d1lw5Rmlpcfew1EF/UxFm4/tYc455w==]
+      args:
+        access_type: "offline"
+        approval_prompt: ""
+gitlab::nginx:
+  enable: false
+gitlab::unicorn:
+  listen: '0.0.0.0'
+  
