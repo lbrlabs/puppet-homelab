@@ -5,8 +5,7 @@ gitlab::gitlab_rails:
   gitlab_email_from: "noreply@briggs.io"
   gitlab_ssh_host: "gitlab.leebriggs.lan"
 gitlab::nginx:
-  listen_https: false
-  listen_port: "9090"
+  enable: false
 gitlab::unicorn:
-  listen: "%{::ipaddress}"
+  listen: '0.0.0.0'
   
