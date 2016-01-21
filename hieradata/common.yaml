@@ -1,6 +1,15 @@
 ---
+rsyslog::client::log_remote: true
+rsyslog::client::remote_type: "udp"
+rsyslog::client::log_local: true
+rsyslog::client::server: "logs.leebriggs.lan"
+rsyslog::client::port: "5514"
+rsyslog::client::log_templates:
+  - name: "RFC3164fmt"
+    template: "<%PRI%>%TIMESTAMP% %HOSTNAME% %syslogtag%%msg%"
+rsyslog::client::remote_forward_format: "RFC3164fmt"
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
-puppet::agent::run_interval: "15m"
+puppet::agent::run_interval: "60m"
 resolv_conf::nameservers: [ "192.168.4.1", "8.8.8.8"]
 resolv_conf::searchpath: [ "leebriggs.lan" ]
 diamond::graphite_host: "graphite.leebriggs.lan"
