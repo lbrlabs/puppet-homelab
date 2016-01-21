@@ -136,6 +136,6 @@ mod 'rsyslog',
   :commit => '1060bb12493b46239250619688d7e3cbd7212143'
 
 # Gitlab Mirrors
-mod 'gitlab_mirros',
+mod 'gitlab_mirrors',
   :git    => 'https://github.com/logicminds/gitlab_mirrors.git',
   :commit => '340d7f80ec8881bb3e59f4752469d3f52c9414d5'
