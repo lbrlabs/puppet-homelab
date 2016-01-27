@@ -1,6 +1,7 @@
 # Set up a monitoring hosts
 class roles::sensu (
-  $opsgenie_customer_key = 'changeme'
+  $opsgenie_customer_key = 'changeme',
+  $influxdb_sensu_password = 'changeme'
 )inherits roles::base {
 
   include profiles::redis
@@ -20,6 +21,21 @@ class roles::sensu (
       'tags'        => 'sensu',
       'customerKey' => $opsgenie_customer_key,
       'recipients'  => 'main',
+    }
+  }
+
+  sensu::extension { 'influxdb-extension':
+    source => 'puppet:///modules/roles/sensu/influxdb-extension.rb',
+    config => {
+      hostname       => '192.168.4.19',
+      port           => '8086',
+      ssl            => false,
+      database       => 'sensu',
+      username       => 'sensu',
+      password       => $influxdb_sensu_password,
+      buffer_size    => 100,
+      buffer_max_age => 10,
+      precision      => 's',
     }
   }
 
