@@ -139,3 +139,8 @@ mod 'rsyslog',
 mod 'gitlab_mirrors',
   :git    => 'https://github.com/logicminds/gitlab_mirrors.git',
   :commit => '340d7f80ec8881bb3e59f4752469d3f52c9414d5'
+
+# InfluxDB
+mod 'influxdb',
+  :git    => 'https://github.com/n1tr0g/golja-influxdb.git',
+  :commit => '58fe0e7c9060bd9f03b95aac8a8ed9db48a87fe7'
