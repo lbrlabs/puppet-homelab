@@ -6,6 +6,10 @@ define moncheck (
   $occurrences = 1,
   $ensure = 'present',
   $handlers = ['opsgenie'],
+  $subscribers = [],
+  $aggregate = false,
+  $handle = undef,
+  $standalone = true,
   $sensu_custom = undef,
 ) {
 
@@ -13,9 +17,12 @@ define moncheck (
     ensure      => $ensure,
     handlers    => $handlers,
     command     => $command,
-    standalone  => true,
+    standalone  => $standalone,
     interval    => $interval,
     occurrences => $occurrences,
+    aggregate   => $aggregate,
+    subscribers => $subscribers,
+    handle      => $handle,
     custom      => merge ({
       event_description => $event_description,
     }, $sensu_custom)
