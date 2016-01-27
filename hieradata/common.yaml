@@ -22,7 +22,7 @@ sensu::rabbitmq_password: "sensu"
 sensu::rabbitmq_vhost: "/sensu"
 sensu::purge: true
 sensu::use_embedded_ruby: true
-sensu::subscriptions: [ "base", "role" ]
+sensu::subscriptions: [ "base", "%{role}" ]
 sensu::sensu_plugin_version: "latest"
 sensu::client_keepalive:
   handler: 'opsgenie'
