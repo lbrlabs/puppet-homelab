@@ -1,5 +1,5 @@
 # Heavily inspired by sensu-puppet
-
+ruby 2.1.5
 source ENV['GEM_SOURCE'] || "https://rubygems.org"
 
 # pin rspec for older puppet versions
