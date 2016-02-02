@@ -52,4 +52,5 @@ consul::config_hash:
   data_dir: "/opt/consul"
   ui_dir: "/opt/consul/ui"
   recursors: ["192.168.4.1"]
-  domain: "service"
+  retry_join: ["puppetmaster.leebriggs.lan", "web.leebriggs.lan", "sensu.leebriggs.lan"]
+
