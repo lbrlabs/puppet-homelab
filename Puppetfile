@@ -88,7 +88,7 @@ mod 'datacat',
 # Consul Module
 mod 'consul',
   :git    => 'https://github.com/solarkennedy/puppet-consul.git',
-  :commit => '32b264e2ceda369ae88254ec46dfafb08acf9c55'
+  :commit => 'c004df7e2707cea632e5a318258f153e15814ee8'
 
 # Resolv_conf module
 mod 'resolv_conf',
