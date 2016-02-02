@@ -40,7 +40,7 @@ mcollective::client: true
 mcollective::collectives:
   - "mcollective"
 consul::pretty_config: true
-consul::version: "0.6.2"
+consul::version: "0.6.3"
 consul::service_ensure: "stopped"
 consul::purge_config_dir: true
 consul::config_hash:
