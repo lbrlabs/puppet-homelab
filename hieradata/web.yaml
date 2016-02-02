@@ -11,6 +11,14 @@ jira::dbpassword: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAF
 jira::proxy:
   scheme: 'https'
   proxyName: 'jira.briggs.io'
-  proxyPort: '443'
-    
+  proxyPort: '443'    
 apache::mod::status::allow_from: [ '127.0.0.1', '192.168.4.0/24' ]
+consul::config_hash:
+  datacenter: "home"
+  client_addr: "0.0.0.0"
+  node_name: "%{::fqdn}"
+  bootstrap_expect: 3
+  server: true
+  data_dir: "/opt/consul"
+  ui_dir: "/opt/consul/ui"
+  recursors: ["192.168.4.1"]

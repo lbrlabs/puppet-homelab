@@ -47,10 +47,6 @@ consul::config_hash:
   datacenter: "home"
   client_addr: "0.0.0.0"
   node_name: "%{::fqdn}"
-  bootstrap_expect: 3
-  server: true
   data_dir: "/opt/consul"
-  ui_dir: "/opt/consul/ui"
-  recursors: ["192.168.4.1"]
-  retry_join: ["puppetmaster.leebriggs.lan", "web.leebriggs.lan", "sensu.leebriggs.lan"]
+  retry_join: ["192.168.4.21", "192.168.4.34", "192.168.4.29" ]
 
