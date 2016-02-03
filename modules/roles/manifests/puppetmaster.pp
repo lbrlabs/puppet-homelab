@@ -8,4 +8,11 @@ class roles::puppetmaster inherits roles::base {
     tags => ['puppet'],
   }
 
+  ::consul::check { 'puppetmaster_tcp':
+    interval   => '60',
+    tcp        => 'localhost:8140',
+    notes      => 'Puppetmasters listen on port 8140',
+    service_id => 'puppetmaster',
+  }
+
 }
