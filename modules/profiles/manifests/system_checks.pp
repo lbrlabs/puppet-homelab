@@ -16,24 +16,24 @@ class profiles::system_checks {
     provider => sensu_gem
   }
 
-  moncheck { 'check_disk_usage':
-    command           => '/usr/lib64/nagios/plugins/check_disk -u GB -l',
-    event_description => 'Check the free disk space on this host!'
+  sensu_check::client { 'check_disk_usage':
+    command       => '/usr/lib64/nagios/plugins/check_disk -u GB -l',
+    event_summary => 'Check the free disk space on this host!'
   }
 
-  moncheck { 'check_load':
-    command           => '/usr/lib64/nagios/plugins/check_load -r -w 5,5,5 -c 10,10,10',
-    event_description => 'check the load on this host!'
+  sensu_check::client { 'check_load':
+    command       => '/usr/lib64/nagios/plugins/check_load -r -w 5,5,5 -c 10,10,10',
+    event_summary => 'check the load on this host!'
   }
 
-  moncheck { 'check_cpu':
-    command           => '/opt/sensu/embedded/bin/check-cpu.rb',
-    event_description => 'CPU usage is too high!',
+  sensu_check::client { 'check_cpu':
+    command       => '/opt/sensu/embedded/bin/check-cpu.rb',
+    event_summary => 'CPU usage is too high!',
   }
 
-  moncheck { 'check_ram':
-    command           => '/opt/sensu/embedded/bin/check-ram.rb',
-    event_description => 'The amount of free memory is too low!',
+  sensu_check::client { 'check_ram':
+    command       => '/opt/sensu/embedded/bin/check-ram.rb',
+    event_summary => 'The amount of free memory is too low!',
   }
 
 }
