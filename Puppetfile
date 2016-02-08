@@ -144,3 +144,7 @@ mod 'gitlab_mirrors',
 mod 'influxdb',
   :git    => 'https://github.com/n1tr0g/golja-influxdb.git',
   :commit => '58fe0e7c9060bd9f03b95aac8a8ed9db48a87fe7'
+
+mod 'sensu_check',
+  :git    => 'git@github.com:jaxxstorm/puppet-sensu_check.git',
+  :branch => 'master'
