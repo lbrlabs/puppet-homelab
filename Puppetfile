@@ -147,4 +147,4 @@ mod 'influxdb',
 
 mod 'sensu_check',
   :git    => 'git@github.com:jaxxstorm/puppet-sensu_check.git',
-  :branch => 'master'
+  :branch => 'develop'
