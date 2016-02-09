@@ -39,4 +39,10 @@ class roles::sensu (
     }
   }
 
+  sensu_check::server { 'check_puppet_lastrun':
+    command       => '/opt/sensu/embedded/bin/check-puppet-last-run.rb -s /var/log/puppet_last_run_summary.yaml',
+    subscribers   => ['base'],
+    event_summary => 'Puppet is failing on this host',
+  }
+
 }

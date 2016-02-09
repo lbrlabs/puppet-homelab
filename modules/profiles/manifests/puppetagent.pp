@@ -17,9 +17,4 @@ class profiles::puppetagent {
     ensure   => installed,
     provider => sensu_gem
   }
-
-  sensu_check::client { 'check_puppet_lastrun':
-    command       => '/opt/sensu/embedded/bin/check-puppet-last-run.rb -s /var/log/puppet_last_run_summary.yaml',
-    event_summary => 'Puppet is failing on this host',
-  }
 }
