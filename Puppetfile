@@ -152,3 +152,7 @@ mod 'sensu_check',
 mod 'teleport',
   :git    => 'https://github.com/jaxxstorm/puppet-teleport.git',
   :branch => 'develop'
+
+mod 'archive',
+  :git    => 'https://github.com/voxpupuli/puppet-archive.git',
+  :commit => '5e457c5af67681bfbcbd3d6bd3b58d06cd71f80d'
