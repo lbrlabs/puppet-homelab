@@ -148,3 +148,7 @@ mod 'influxdb',
 mod 'sensu_check',
   :git    => 'git@github.com:jaxxstorm/puppet-sensu_check.git',
   :branch => 'develop'
+
+mod 'teleport',
+  :git    => 'https://github.com/jaxxstorm/puppet-teleport.git',
+  :branch => 'develop'
