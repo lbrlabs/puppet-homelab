@@ -49,4 +49,7 @@ consul::config_hash:
   node_name: "%{::fqdn}"
   data_dir: "/opt/consul"
   retry_join: ["192.168.4.21", "192.168.4.34", "192.168.4.29" ]
-
+teleport::auth_servers: [ 'web.leebriggs.lan' ]
+teleport::proxy_ssl: true
+teleport::proxy_ssl_key: "/var/lib/puppet/ssl/private_keys/web.leebriggs.lan.pem"
+teleport::proxy_ssl_cert: "/var/lib/puppet/ssl/certs/web.leebriggs.lan.pem"
