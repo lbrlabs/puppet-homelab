@@ -28,6 +28,6 @@ teleport::proxy_enable: true
 teleport::proxy_listen_addr: "0.0.0.0"
 teleport::proxy_web_listen_addr: "0.0.0.0"
 teleport::proxy_ssl: true
-teleport::proxy_ssl_key: "/var/lib/puppet/ssl/private_keys/%{::fqdn}.pem"
-teleport::proxy_ssl_cert: "/var/lib/puppet/ssl/certs/%{::fqdn}.pem"
+teleport::proxy_ssl_key: "/etc/letsencrypt/live/briggs.io/privkey.pem"
+teleport::proxy_ssl_cert: "/etc/letsencrypt/live/briggs.io/fullchain.pem"
 
