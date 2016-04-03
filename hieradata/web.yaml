@@ -22,3 +22,12 @@ consul::config_hash:
   data_dir: "/opt/consul"
   ui_dir: "/opt/consul/ui"
   recursors: ["192.168.4.1"]
+teleport::auth_enable: true
+teleport::auth_listen_addr: "0.0.0.0"
+teleport::proxy_enable: true
+teleport::proxy_listen_addr: "0.0.0.0"
+teleport::proxy_web_listen_addr: "0.0.0.0"
+teleport::proxy_ssl: true
+teleport::proxy_ssl_key: "/etc/letsencrypt/live/briggs.io/privkey.pem"
+teleport::proxy_ssl_cert: "/etc/letsencrypt/live/briggs.io/fullchain.pem"
+

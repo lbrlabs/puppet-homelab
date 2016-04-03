@@ -32,6 +32,9 @@ mod 'nanliu/staging', '1.0.3'
 # Repoforge module
 # Needed for mrepo
 mod 'm0byd1ck/repoforge', '1.0.0'
+mod 'repoforge',
+  :git    => 'https://github.com/m0byd1ck/puppet-module-repoforge.git',
+  :commit => '046051bca27a875f91f785b2ef4e5e2cc4d82168'
 
 # Diamond metrics collector
 mod 'diamond',
@@ -148,3 +151,11 @@ mod 'influxdb',
 mod 'sensu_check',
   :git    => 'git@github.com:jaxxstorm/puppet-sensu_check.git',
   :branch => 'develop'
+
+mod 'teleport',
+  :git    => 'https://github.com/jaxxstorm/puppet-teleport.git',
+  :branch => 'master'
+
+mod 'archive',
+  :git    => 'https://github.com/voxpupuli/puppet-archive.git',
+  :commit => '5e457c5af67681bfbcbd3d6bd3b58d06cd71f80d'

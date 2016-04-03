@@ -35,5 +35,7 @@ class roles::base {
 
   include ::rsyslog::client
 
+  include ::teleport
+
 }
 
