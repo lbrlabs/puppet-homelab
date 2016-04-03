@@ -31,7 +31,6 @@ mod 'nanliu/staging', '1.0.3'
 
 # Repoforge module
 # Needed for mrepo
-mod 'm0byd1ck/repoforge', '1.0.0'
 mod 'repoforge',
   :git    => 'https://github.com/m0byd1ck/puppet-module-repoforge.git',
   :commit => '046051bca27a875f91f785b2ef4e5e2cc4d82168'
@@ -75,8 +74,8 @@ mod 'dnsmasq',
 
 # JIRA Module
 mod 'jira',
-  :git    => 'https://github.com/puppet-community/puppet-jira.git',
-  :commit => 'f402380435f3cb654e70dcb0b4031fb4cc1fa543'
+  :git    => 'https://github.com/voxpupuli/puppet-jira.git',
+  :commit => 'e98e6f72fd5f04a3f572fb754402abcc0060a042'
 
 # Mcollective Module
 mod 'mcollective',
