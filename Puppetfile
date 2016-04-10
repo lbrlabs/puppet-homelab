@@ -10,7 +10,9 @@ mod 'apache',
   :commit => 'f6c2e39dc7780cb4065d30e0e311f80dbdb8f203'
 
 # Graphite Module
-mod 'dwerder/graphite', '5.14.0'
+mod 'graphite',
+  :git    => 'https://github.com/echocat/puppet-graphite.git',
+  :commit => '5690e455b563d147da578a52e79e987d5d822535'
 
 # Epel for all the things
 mod 'stahnma/epel', :latest
