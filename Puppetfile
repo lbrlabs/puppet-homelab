@@ -67,10 +67,10 @@ mod 'uchiwa',
   :git    => 'https://github.com/Yelp/puppet-uchiwa.git',
   :commit => 'd1bf90bef37973371f5d619e3ca7e77b0481b9d3'
 
-# DNSMasq Module
-mod 'dnsmasq',
-  :git    => 'https://github.com/rlex/puppet-dnsmasq.git',
-  :commit => 'd37d48012df8115132694b0f9c9d0fff15a4fb3c'
+# unbound Module
+mod 'unbound',
+  :git    => 'https://github.com/xaque208/puppet-unbound.git',
+  :commit => 'fdddd634109120c79fc4a10aa20b6810abf6f8bc'
 
 # JIRA Module
 mod 'jira',
@@ -147,14 +147,17 @@ mod 'influxdb',
   :git    => 'https://github.com/n1tr0g/golja-influxdb.git',
   :commit => '58fe0e7c9060bd9f03b95aac8a8ed9db48a87fe7'
 
-mod 'sensu_check',
+# Personal sensu check
+mod 'sensu_check', 
   :git    => 'git@github.com:jaxxstorm/puppet-sensu_check.git',
   :branch => 'develop'
 
+# Teleport module
 mod 'teleport',
   :git    => 'https://github.com/jaxxstorm/puppet-teleport.git',
   :branch => 'master'
 
+# Archive module
 mod 'archive',
   :git    => 'https://github.com/voxpupuli/puppet-archive.git',
   :commit => '5e457c5af67681bfbcbd3d6bd3b58d06cd71f80d'

@@ -50,3 +50,7 @@ consul::config_hash:
   data_dir: "/opt/consul"
   retry_join: ["192.168.4.21", "192.168.4.34", "192.168.4.29" ]
 teleport::auth_servers: [ 'web.leebriggs.lan:3025' ]
+unbound::interfaces:
+  - '0.0.0.0'
+unbound::access:
+  - '192.168.4.1/24'
