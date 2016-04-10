@@ -50,7 +50,7 @@ consul::config_hash:
   data_dir: "/opt/consul"
   retry_join: ["192.168.4.21", "192.168.4.34", "192.168.4.29" ]
 teleport::auth_servers: [ 'web.leebriggs.lan:3025' ]
-unbound::val-permissive-mode: 'yes' # Disable DNSSec
+unbound::val_permissive_mode: true # Disable DNSSec
 unbound::interfaces:
   - '127.0.0.1'
 unbound::access:
