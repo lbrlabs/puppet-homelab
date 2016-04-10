@@ -8,6 +8,7 @@ graphite::gr_storage_schemas:
     pattern: '.*'
     retentions: '10s:7d,60s:30d,5m:90d,15m:1y'
 graphite::gr_local_data_dir: "/mnt/graphite/storage/whisper"
+graphite::gr_graphiteweb_storage_dir: "/opt/graphite/storage/graphite.db"
 graphite::gr_web_server: 'none'
 graphite::gr_web_user: 'apache'
 graphite::gr_web_group: 'apache'
