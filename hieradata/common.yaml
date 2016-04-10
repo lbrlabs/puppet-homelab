@@ -10,7 +10,7 @@ rsyslog::client::log_templates:
 rsyslog::client::remote_forward_format: "RFC3164fmt"
 puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
 puppet::agent::run_interval: "60m"
-resolv_conf::nameservers: [ "192.168.4.1", "8.8.8.8"]
+resolv_conf::nameservers: [ "127.0.0.1", "192.168.4.1", "8.8.8.8"]
 resolv_conf::searchpath: [ "leebriggs.lan" ]
 diamond::graphite_host: "graphite.leebriggs.lan"
 diamond::path_prefix: "hosts.%{::virtual}.diamond"
