@@ -38,7 +38,7 @@ mod 'repoforge',
 # Diamond metrics collector
 mod 'diamond',
   :git    => 'https://github.com/garethr/garethr-diamond.git',
-  :commit => '1355a5f5052368ff44b31c73630bb5a75f46c32c'
+  :commit => '548040775c6381ce7b18f6334ab0723fbc810b53'
 
 # Redis module
 mod 'arioch/redis', '1.1.3'
