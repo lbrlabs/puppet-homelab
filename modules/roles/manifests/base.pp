@@ -37,5 +37,7 @@ class roles::base {
 
   include ::teleport
 
+  include ::unbound
+
 }
 
