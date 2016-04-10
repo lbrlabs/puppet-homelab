@@ -49,6 +49,7 @@ consul::config_hash:
   node_name: "%{::fqdn}"
   data_dir: "/opt/consul"
   retry_join: ["192.168.4.21", "192.168.4.34", "192.168.4.29" ]
+  advertise_addr: "%{::ipaddress}"
 teleport::auth_servers: [ 'web.leebriggs.lan:3025' ]
 unbound::val_permissive_mode: true # Disable DNSSec
 unbound::interfaces:
