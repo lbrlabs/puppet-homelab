@@ -54,3 +54,8 @@ unbound::interfaces:
   - '0.0.0.0'
 unbound::access:
   - '192.168.4.1/24'
+unbound::stub:
+  'service.consul':
+    - '192.168.4.21@8600'
+    - '192.168.4.29@8600'
+    - '192.168.4.34@8600'
