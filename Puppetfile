@@ -5,7 +5,9 @@ moduledir 'vendor'
 mod 'puppetlabs/stdlib', :latest
 
 # Apache Module
-mod 'puppetlabs/apache', '1.6.0'
+mod 'apache',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-apache.git',
+  :commit => 'f6c2e39dc7780cb4065d30e0e311f80dbdb8f203'
 
 # Graphite Module
 mod 'dwerder/graphite', '5.14.0'
