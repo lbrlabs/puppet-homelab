@@ -3,3 +3,4 @@ foreman_proxy::http: true
 foreman_proxy::register_in_foreman: false
 foreman_proxy::puppetca: false
 foreman_proxy::puppetrun: false
+foreman_proxy::bind_host: '%{::ipaddress}'
