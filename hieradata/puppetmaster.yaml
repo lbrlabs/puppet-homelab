@@ -1,5 +1,5 @@
 puppet::master::r10k::basegiturl: 'git@github.com:jaxxstorm/puppet-homelab.git'
-puppet::version: 'latest'
+puppet::version: 'installed'
 puppet::server: true
 puppet::server_ip: "%{::ipaddress}"
 puppet::server_reports: "log, foreman"
