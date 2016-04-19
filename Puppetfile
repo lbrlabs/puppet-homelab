@@ -177,3 +177,7 @@ mod 'tftp',
 mod 'puppet',
   :git    => 'https://github.com/theforeman/puppet-puppet.git',
   :commit => 'a2325f144397a1f8c1e395f432c7dffb06455ac0'
+
+mod 'extlib',
+  :git    => 'https://github.com/voxpupuli/puppet-extlib',
+  :commit => '89fd5076f724bc2f12d346a94378d7c30e44f218'
