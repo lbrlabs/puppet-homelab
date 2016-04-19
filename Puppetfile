@@ -181,3 +181,7 @@ mod 'puppet',
 mod 'extlib',
   :git    => 'https://github.com/voxpupuli/puppet-extlib',
   :commit => '89fd5076f724bc2f12d346a94378d7c30e44f218'
+
+mod 'xinetd',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-xinetd.git',
+  :commit => '8c01bd70fe4503a672da949cc660159f059ee6b8'
