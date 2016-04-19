@@ -53,7 +53,7 @@ mod 'puppetlabs/mysql', '3.6.0'
 # Foreman Module
 mod 'foreman',
   :git    => 'https://github.com/theforeman/puppet-foreman.git',
-  :commit => 'cccd4e6a0c6f89d6b39f3e448a46ea902024b979'
+  :commit => 'ac07877997e1765e35841c342458fc33041c2d00'
 
 # Erlang Module
 mod 'garethr/erlang', '0.3.0'
