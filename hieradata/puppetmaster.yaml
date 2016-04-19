@@ -1,5 +1,10 @@
 puppet::master::r10k::basegiturl: 'git@github.com:jaxxstorm/puppet-homelab.git'
 puppet::version: '1.4.1-1.el%{::operatingsystemmajrelease}'
+puppet::server: true
+puppet::server_ip: "%{::ipaddress}"
+puppet::server_reports: "log, foreman"
+puppet::server_implementation: "puppetserver"
+puppet::server_external_nodes: " /etc/puppet/node.rb"
 foreman_proxy::ssl: false
 foreman_proxy::http: true
 foreman_proxy::register_in_foreman: false
