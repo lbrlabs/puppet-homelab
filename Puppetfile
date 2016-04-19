@@ -169,3 +169,7 @@ mod 'archive',
 mod 'foreman_proxy',
   :git    => 'https://github.com/theforeman/puppet-foreman_proxy.git',
   :commit => '8346937a5db69213afa7978e2f0fb1d6f6d0407c'
+
+mod 'tftp',
+  :git    => 'https://github.com/theforeman/puppet-tftp.git',
+  :commit => '0ca019e433d787a8a6ee63e9d6b92b06ee850eaf'
