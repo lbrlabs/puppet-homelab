@@ -1,7 +1,7 @@
 puppet::master::r10k::basegiturl: 'git@github.com:jaxxstorm/puppet-homelab.git'
 puppet::version: 'installed'
 puppet::server: true
-puppet::server_ip: "%{::networking.interfaces.venet0:0.ip}"
+puppet::server_ip: "0.0.0.0"
 puppet::server_reports: "log, foreman"
 puppet::server_implementation: "puppetserver"
 puppet::server_external_nodes: " /etc/puppet/node.rb"
@@ -12,7 +12,7 @@ foreman_proxy::http: true
 foreman_proxy::register_in_foreman: false
 foreman_proxy::tftp: false
 foreman_proxy::puppetrun: false
-foreman_proxy::bind_host: '%{::ipaddress}'
+foreman_proxy::bind_host: '0.0.0.0'
 consul::config_hash:
   datacenter: "home"
   client_addr: "0.0.0.0"
