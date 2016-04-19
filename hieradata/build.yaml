@@ -1,1 +1,2 @@
 foreman_proxy::ssl: false
+foreman_proxy::register_in_foreman: false
