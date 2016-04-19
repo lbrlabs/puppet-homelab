@@ -8,8 +8,6 @@ rsyslog::client::log_templates:
   - name: "RFC3164fmt"
     template: "<%PRI%>%TIMESTAMP% %HOSTNAME% %syslogtag%%msg%"
 rsyslog::client::remote_forward_format: "RFC3164fmt"
-puppet::agent::puppet_server: "puppetmaster.leebriggs.lan"
-puppet::agent::run_interval: "60m"
 resolv_conf::nameservers: [ "192.168.4.1", "8.8.8.8"]
 resolv_conf::searchpath: [ "leebriggs.lan" ]
 diamond::graphite_host: "graphite.leebriggs.lan"
@@ -64,3 +62,6 @@ unbound::forward:
     - '192.168.4.21@8600'
     - '192.168.4.29@8600'
     - '192.168.4.34@8600'
+puppet::version: '3.8.6-1.el%{::operatingsystemmajrelease}'
+puppet::agent: true
+puppet::puppetmaster: 'puppetmaster.leebriggs.lan'

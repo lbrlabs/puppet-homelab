@@ -166,6 +166,7 @@ mod 'archive',
   :git    => 'https://github.com/voxpupuli/puppet-archive.git',
   :commit => '5e457c5af67681bfbcbd3d6bd3b58d06cd71f80d'
 
+<<<<<<< HEAD
 mod 'foreman_proxy',
   :git    => 'https://github.com/theforeman/puppet-foreman_proxy.git',
   :commit => '8346937a5db69213afa7978e2f0fb1d6f6d0407c'
@@ -173,3 +174,7 @@ mod 'foreman_proxy',
 mod 'tftp',
   :git    => 'https://github.com/theforeman/puppet-tftp.git',
   :commit => '0ca019e433d787a8a6ee63e9d6b92b06ee850eaf'
+
+mod 'puppet',
+  :git    => 'https://github.com/theforeman/puppet-puppet.git',
+  :commit => 'a2325f144397a1f8c1e395f432c7dffb06455ac0'

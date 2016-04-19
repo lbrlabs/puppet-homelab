@@ -2,7 +2,7 @@
 class profiles::puppetagent {
 
   # Include the Puppet agent
-  include puppet::agent
+  include ::puppet
 
   # Include the diamond collector with it
   diamond::collector { 'PuppetAgentCollector':
