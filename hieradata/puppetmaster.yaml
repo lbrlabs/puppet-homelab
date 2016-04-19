@@ -14,6 +14,7 @@ foreman_proxy::tftp: false
 foreman_proxy::puppetca: true
 foreman_proxy::puppetrun: true
 foreman_proxy::bind_host: '0.0.0.0'
+foreman_proxy::puppetca_listen_on: 'both'
 consul::config_hash:
   datacenter: "home"
   client_addr: "0.0.0.0"
