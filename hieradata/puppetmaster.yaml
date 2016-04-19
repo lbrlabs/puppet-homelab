@@ -1,10 +1,12 @@
 puppet::master::r10k::basegiturl: 'git@github.com:jaxxstorm/puppet-homelab.git'
 puppet::version: 'installed'
 puppet::server: true
-puppet::server_ip: "%{::ipaddress}"
+puppet::server_ip: "%{::networking.interfaces.venet0:0.ip}"
 puppet::server_reports: "log, foreman"
 puppet::server_implementation: "puppetserver"
 puppet::server_external_nodes: " /etc/puppet/node.rb"
+puppet::server_jvm_min_heap_size: "1G"
+puppet::server_jvm_max_heap_size: "1G"
 foreman_proxy::ssl: false
 foreman_proxy::http: true
 foreman_proxy::register_in_foreman: false
