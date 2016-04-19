@@ -165,3 +165,7 @@ mod 'teleport',
 mod 'archive',
   :git    => 'https://github.com/voxpupuli/puppet-archive.git',
   :commit => '5e457c5af67681bfbcbd3d6bd3b58d06cd71f80d'
+
+mod 'puppet',
+  :git    => 'https://github.com/theforeman/puppet-puppet.git',
+  :commit => 'a2325f144397a1f8c1e395f432c7dffb06455ac0'
