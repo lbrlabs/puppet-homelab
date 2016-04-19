@@ -7,7 +7,6 @@ puppet::server_implementation: "puppetserver"
 puppet::server_external_nodes: " /etc/puppet/node.rb"
 puppet::server_jvm_min_heap_size: "1G"
 puppet::server_jvm_max_heap_size: "1G"
-puppet::server_directory_environments: false
 foreman_proxy::ssl: false
 foreman_proxy::http: true
 foreman_proxy::register_in_foreman: false
