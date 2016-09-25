@@ -168,4 +168,4 @@ mod 'archive',
 
 mod 'puppet',
   :git    => 'https://github.com/theforeman/puppet-puppet.git',
-  :commit => 'a2325f144397a1f8c1e395f432c7dffb06455ac0'
+  :commit => 'd867e0907cc95f68b537cebe30fc850005e21089'
