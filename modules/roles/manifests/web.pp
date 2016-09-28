@@ -154,10 +154,10 @@ class roles::web (
     redirect_dest   => 'https://git.briggs.io',
   }
 
-  apache::vhost { 'logs.briggs.io':
+  apache::vhost { 'media.briggs.io':
     port                => '443',
-    docroot             => '/var/www/logs',
-    proxy_dest          => 'http://192.168.4.10:9000',
+    docroot             => '/var/www/media',
+    proxy_dest          => 'http://192.168.4.101',
     proxy_preserve_host => true,
     ssl                 => true,
     ssl_cert            => $ssl_cert_path,
@@ -166,12 +166,12 @@ class roles::web (
     ssl_proxyengine     => true,
   }
 
-  apache::vhost { 'logs.briggs.io plaintext':
-    servername      => 'logs.briggs.io',
+  apache::vhost { 'media.briggs.io plaintext':
+    servername      => 'media.briggs.io',
     port            => 80,
-    docroot         => '/var/www/git',
+    docroot         => '/var/www/media',
     redirect_status => 'permanent',
-    redirect_dest   => 'https://logs.briggs.io',
+    redirect_dest   => 'https://media.briggs.io',
   }
 
   include ::apache::mod::status
