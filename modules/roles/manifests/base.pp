@@ -3,9 +3,6 @@
 # You want everywhere
 class roles::base {
 
-  # We want puppet everywhere
-  include ::profiles::puppetagent
-
   class { '::profiles::yumrepos':
     stage => pre,
   } ->
@@ -27,15 +24,9 @@ class roles::base {
 
   include ::profiles::system_checks
 
-  include ::profiles::mcollective
-
   include ::profiles::consul
 
   include ::resolv_conf
-
-  include ::rsyslog::client
-
-  include ::teleport
 
   include ::unbound
 
