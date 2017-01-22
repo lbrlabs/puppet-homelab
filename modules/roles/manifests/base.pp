@@ -14,7 +14,7 @@ class roles::base {
   
   # Collect some base system metrics
   # TODO: Include diamond in here?
-  #include ::profiles::system_metrics
+  include ::profiles::system_metrics
 
   include ::sensu
 
@@ -22,7 +22,7 @@ class roles::base {
     stage => pre
   }
 
-  include ::profiles::system_checks
+  #include ::profiles::system_checks
 
   include ::profiles::consul
 
