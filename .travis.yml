@@ -1,7 +1,7 @@
 ---
 language: ruby
 bundler_args: --without development
-script: "bundle install && bundle exec rake test SPEC_OPTS='--format documentation'"
+script: "bundle install && bundle exec rake test SPEC_OPTS='--format documentation' && bundle exec rake mdl README.md"
 cache: bundler
 sudo: false
 branches:
