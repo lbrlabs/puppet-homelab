@@ -1,2 +1,0 @@
-roles::foreman::foreman_db_host: 'db.leebriggs.lan'
-foreman::authentication: false
