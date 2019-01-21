@@ -16,3 +16,7 @@ mod 'puppet',
   :git => 'https://github.com/theforeman/puppet-puppet.git',
   :ref => '263f230efb64e1087ee5ab9f8142724e179399d5'
 
+mod 'concat',
+  :git => 'https://github.com/puppetlabs/puppetlabs-concat.git',
+  :ref => 'e5dbbe56bcbfd6d92fa06622dfd62fdcf0e552c3'
+
