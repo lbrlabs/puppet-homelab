@@ -17,3 +17,4 @@ accounts::usergroups:
   lbriggs:
     - lbriggs
     - admin
+    - docker
