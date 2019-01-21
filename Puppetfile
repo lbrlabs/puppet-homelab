@@ -40,3 +40,7 @@ mod 'accounts',
   :git => 'https://github.com/puppetlabs/puppetlabs-accounts.git',
   :ref => '5c7f9e9890473981c9c48a8f39cad7ce613db6b7'
 
+mod 'consul',
+  :git => 'https://github.com/solarkennedy/puppet-consul.git',
+  :ref => 'a75a2bbacfe2ca9d4ff86c41bd7145c3501ccee6'
+

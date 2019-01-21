@@ -1,1 +1,12 @@
 profiles::users::groups: [ 'admin', 'docker' ]
+consul::config_hash:
+  bootstrap_expect: 3
+  node_name: "%{fqdn}"
+  datacenter: "home"
+  server: true
+  ui: true
+  bind: "${networking.interfaces.eth.ip}"
+  retry_join:
+   - "saturn.home.lbrlabs.com"
+   - "pluto.home.lbrlabs.com"
+   - "venus.home.lbrlabs.com"

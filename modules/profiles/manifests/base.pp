@@ -13,4 +13,6 @@ class profiles::base {
   include ::cron
   include ::sudo
 
+  include ::profiles::consul
+
 }
