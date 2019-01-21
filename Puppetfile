@@ -20,3 +20,7 @@ mod 'concat',
   :git => 'https://github.com/puppetlabs/puppetlabs-concat.git',
   :ref => 'e5dbbe56bcbfd6d92fa06622dfd62fdcf0e552c3'
 
+mod 'cron',
+  :git => 'https://github.com/jaxxstorm/puppet-cron.git',
+  :ref => '7b55a8c03d6e2bf3f264c6ecc313d50c42a53440'
+

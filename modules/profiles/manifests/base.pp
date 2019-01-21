@@ -6,5 +6,6 @@ class profiles::base {
   }
 
   include ::puppet
+  include ::cron
 
 }
