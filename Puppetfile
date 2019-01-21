@@ -32,3 +32,7 @@ mod 'docker',
   :git => 'https://github.com/puppetlabs/puppetlabs-docker.git',
   :ref => '3ece32ce4fd50b99a80957db6b0909b6cb68e14f'
 
+mod 'accounts',
+  :git => 'https://github.com/camptocamp/puppet-accounts.git',
+  :ref => 'c811cf3abeada8e4441b4bbbd882ba1d3c2f7451'
+
