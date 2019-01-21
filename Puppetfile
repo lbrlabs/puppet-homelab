@@ -50,5 +50,5 @@ mod 'archive',
 
 mod 'systemd',
   :git => 'https://github.com/camptocamp/puppet-systemd.git',
-  :ref => 'f2ab8e6b1671730da9a9cdba5cad5c9b2be45a4f',
+  :ref => 'f2ab8e6b1671730da9a9cdba5cad5c9b2be45a4f'
 
