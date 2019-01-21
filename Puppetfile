@@ -24,3 +24,7 @@ mod 'cron',
   :git => 'https://github.com/jaxxstorm/puppet-cron.git',
   :ref => '7b55a8c03d6e2bf3f264c6ecc313d50c42a53440'
 
+mod 'apt',
+  :git => 'https://github.com/puppetlabs/puppetlabs-apt.git',
+  :ref => '112eeb831a1e0951fdd4dbaff8f880c3c226de44'
+
