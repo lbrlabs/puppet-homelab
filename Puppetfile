@@ -44,3 +44,11 @@ mod 'consul',
   :git => 'https://github.com/solarkennedy/puppet-consul.git',
   :ref => 'a75a2bbacfe2ca9d4ff86c41bd7145c3501ccee6'
 
+mod 'archive',
+  :git => 'https://github.com/voxpupuli/puppet-archive.git',
+  :ref => 'df97d528ddfeed9426d2d48db22b0db401543006'
+
+mod 'systemd',
+  :git => 'https://github.com/camptocamp/puppet-systemd.git',
+  :ref => 'f2ab8e6b1671730da9a9cdba5cad5c9b2be45a4f',
+
