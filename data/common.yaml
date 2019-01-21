@@ -12,3 +12,4 @@ accounts::users:
 accounts::usergroups:
   lbriggs:
     - lbriggs
+    - admin
