@@ -1,6 +1,10 @@
 # consul profiles
 class profiles::consul {
 
-  include ::consul
+  file { '/opt/consul':
+    ensure => directory,
+  } ->
+  class { '::consul': }
+
 
 }
