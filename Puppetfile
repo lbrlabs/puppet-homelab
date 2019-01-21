@@ -28,3 +28,7 @@ mod 'apt',
   :git => 'https://github.com/puppetlabs/puppetlabs-apt.git',
   :ref => '112eeb831a1e0951fdd4dbaff8f880c3c226de44'
 
+mod 'docker',
+  :git => 'https://github.com/puppetlabs/puppetlabs-docker.git',
+  :ref => '3ece32ce4fd50b99a80957db6b0909b6cb68e14f'
+
