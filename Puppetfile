@@ -12,3 +12,7 @@ mod 'git',
   :git => 'https://github.com/puppetlabs/puppetlabs-git.git',
   :ref => '4e4498e3db218cefc27e40b7eb4e442177ccab28'
 
+mod 'puppet',
+  :git => 'https://github.com/theforeman/puppet-puppet.git',
+  :ref => '263f230efb64e1087ee5ab9f8142724e179399d5'
+

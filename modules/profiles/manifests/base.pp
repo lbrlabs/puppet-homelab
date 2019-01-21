@@ -5,4 +5,6 @@ class profiles::base {
     stage => pre
   }
 
+  include ::puppet
+
 }
