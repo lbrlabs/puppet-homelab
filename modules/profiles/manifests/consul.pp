@@ -1,7 +1,7 @@
 # consul profiles
 class profiles::consul (
   $datacenter = 'home',
-  $advertise_addr = "${::networking.interfaces.eth0.ip}",
+  $advertise_addr = "${::networking}.interfaces.eth0.ip",
   $retry_join = [],
   $server = false,
   $bootstrap_expect = 3,
@@ -11,7 +11,7 @@ class profiles::consul (
 
   $common_config = {
     datacenter           => $datacenter,
-    data_dir             => '/opt/consul'
+    data_dir             => '/opt/consul',
     advertise_addr       => $advertise_addr,
     client_addr          => '0.0.0.0',
     node_name            => $::fqdn,
@@ -34,7 +34,7 @@ class profiles::consul (
   }
 
 
-  class { '::consul': 
+  class { '::consul':
     config_hash   => $config_hash,
     pretty_config => true,
   }
