@@ -1,13 +1,12 @@
 # manage and install users
-class profiles::users {
+class profiles::users (
+  $groups = [ 'admin' ] 
+){
 
   accounts::user { 'lbriggs':
     shell   => '/bin/bash',
     comment => 'Lee Briggs',
-    groups  => [
-      'admin',
-      'docker',
-    ],
+    groups  => $groups,
     uid     => '1000',
     gid     => '1000',
     sshkeys => [

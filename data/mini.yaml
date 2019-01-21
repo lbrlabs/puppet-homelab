@@ -1,0 +1,1 @@
+profiles::users::groups: [ 'admin', 'docker' ]
