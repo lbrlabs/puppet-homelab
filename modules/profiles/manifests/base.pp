@@ -5,12 +5,12 @@ class profiles::base {
   class { '::profiles::packages':
     stage => pre
   }
+  class { '::profiles::users':
+    stage => pre
+  }
 
   include ::puppet
   include ::cron
-
-  include ::profiles::users
-
   include ::sudo
 
 }
