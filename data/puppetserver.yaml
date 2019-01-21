@@ -5,3 +5,7 @@ puppet::server_reports: 'store'
 puppet::server_external_nodes: ''
 puppet::autosign_entries:
   - home.lbrlabs.com
+puppet::server_common_modules_path:
+  - /etc/puppetlabs/code/modules
+  - /opt/puppetlabs/puppet/modules
+  - /usr/share/puppet/modules
