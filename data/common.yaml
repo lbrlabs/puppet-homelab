@@ -1,6 +1,10 @@
 ---
 puppet::agent: true
 puppet::puppetmaster: 'puppetserver.home.lbrlabs.com'
+sudo::config_file_replace: false
+sudo::configs:
+  'admins':
+    'content'   : "%admin ALL=(ALL) NOPASSWD: ALL"
 accounts::ssh_keys:
   lbriggs:
     type: ssh-rsa

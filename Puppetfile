@@ -36,3 +36,7 @@ mod 'accounts',
   :git => 'https://github.com/camptocamp/puppet-accounts.git',
   :ref => 'c811cf3abeada8e4441b4bbbd882ba1d3c2f7451'
 
+mod 'sudo',
+  :git => 'https://github.com/saz/puppet-sudo.git',
+  :ref => 'f2e2d62c2ad9eaad2c36f8bfb727a66e587af1ab'
+

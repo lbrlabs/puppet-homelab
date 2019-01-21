@@ -10,4 +10,6 @@ class profiles::base {
 
   include ::profiles::users
 
+  include ::sudo
+
 }
