@@ -3,6 +3,7 @@ class profiles::packages {
   
   package { [
       'zsh',
+      'unzip',
     ]:
     ensure => installed,
   }
