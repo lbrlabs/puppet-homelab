@@ -3,6 +3,10 @@ class profiles::users (
   $groups = [ 'admin' ] 
 ){
 
+  group { 'admin':
+    gid => 2000,
+  }
+
   accounts::user { 'lbriggs':
     shell   => '/bin/bash',
     comment => 'Lee Briggs',
