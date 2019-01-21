@@ -1,1 +1,4 @@
 puppet::server: true
+puppet::autosign: true
+puppet::autosign_entries:
+  - home.lbrlabs.com
