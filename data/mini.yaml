@@ -5,7 +5,7 @@ consul::config_hash:
   datacenter: "home"
   server: true
   ui: true
-  bind: "${networking.interfaces.eth.ip}"
+  advertise_addr: "${networking.interfaces.eth.ip}"
   retry_join:
    - "saturn.home.lbrlabs.com"
    - "pluto.home.lbrlabs.com"
