@@ -1,11 +1,12 @@
 profiles::users::groups: [ 'admin', 'docker' ]
 consul::config_hash:
   bootstrap_expect: 3
+  data_dir: '/opt/consul'
   node_name: "%{fqdn}"
   datacenter: "home"
   server: true
   ui: true
-  advertise_addr: "%{networking.interfaces.eth.ip}"
+  advertise_addr: "%{networking.interfaces.eth0.ip}"
   retry_join:
    - "saturn.home.lbrlabs.com"
    - "pluto.home.lbrlabs.com"
