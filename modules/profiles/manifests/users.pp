@@ -7,6 +7,10 @@ class profiles::users (
     gid => 2000,
   }
 
+  group { 'docker':
+    gid => 997,
+  }
+
   accounts::user { 'lbriggs':
     shell   => '/bin/bash',
     comment => 'Lee Briggs',
