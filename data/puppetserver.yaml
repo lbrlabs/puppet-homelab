@@ -1,4 +1,5 @@
 puppet::server: true
 puppet::autosign: true
+puppet::server_foreman: false
 puppet::autosign_entries:
   - home.lbrlabs.com
