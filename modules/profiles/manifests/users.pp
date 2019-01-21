@@ -8,7 +8,6 @@ class profiles::users (
   }
 
   group { 'docker':
-    gid => 997,
   }
 
   accounts::user { 'lbriggs':
