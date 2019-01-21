@@ -1,7 +1,8 @@
+# Base profile applied to all nodes
 class profiles::base {
 
   # Install packages
-	class { '::profiles::packages':
+  class { '::profiles::packages':
     stage => pre
   }
 
