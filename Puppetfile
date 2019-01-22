@@ -56,7 +56,10 @@ mod 'puppet_agent',
   :git => 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git',
   :ref => '66addedcd0ffc115d1746cb4954edfaae98c87ca'
 
+mod 'file_capability',
+  :git => 'https://github.com/smoeding/puppet-file_capability.git',
+  :ref => '2b71a91ec3e09a40372f5323028518fd3576341f'
+
 mod 'coredns',
   :git => 'https://github.com/jaxxstorm/puppet-coredns.git',
   :ref => 'master'
-
