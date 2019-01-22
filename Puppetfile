@@ -56,10 +56,6 @@ mod 'puppet_agent',
   :git => 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git',
   :ref => '66addedcd0ffc115d1746cb4954edfaae98c87ca'
 
-mod 'systemd',
-  :git => 'https://github.com/camptocamp/puppet-systemd.git',
-  :ref => 'f2ab8e6b1671730da9a9cdba5cad5c9b2be45a4f'
-
 mod 'coredns',
   :git => 'https://github.com/jaxxstorm/puppet-coredns.git',
   :ref => 'master'
