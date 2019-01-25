@@ -95,6 +95,6 @@ mod 'mcollective_agent_filemgr',
 
 mod 'mcollective_util_actionpolicy',
   :git => 'https://github.com/choria-plugins/action-policy.git',
-  :ref => 'c0449fef093780d98a23839624a2ba56364feaac',
+  :ref => 'c0449fef093780d98a23839624a2ba56364feaac'
 
 
