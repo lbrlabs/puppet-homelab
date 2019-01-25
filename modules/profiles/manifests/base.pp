@@ -15,4 +15,6 @@ class profiles::base {
 
   include ::profiles::consul
 
+  include ::profiles::choria
+
 }
