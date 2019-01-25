@@ -13,3 +13,8 @@ profiles::consul::retry_join:
   - "venus.home.lbrlabs.com"
 mcollective::client: true
 mcollective::plugin_classes: []
+mcollective_choria::config:
+  use_srv_records: false
+  puppetserver_host: "puppetserver.home.lbrlabs.com"
+  puppetca_host: "puppetserver.home.lbrlabs.com"
+  middleware_hosts: "puppetserver.home.lbrlabs.com"
