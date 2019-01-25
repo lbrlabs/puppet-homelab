@@ -14,8 +14,8 @@ class profiles::puppetserver {
   include ::profiles::choria
 
   class{"choria::broker":
-    network_broker => true
-    identity       => $::fqdn
+    network_broker => true,
+    identity       => $::fqdn,
   }
 
 }
