@@ -11,4 +11,11 @@ class profiles::puppetserver {
     remote => 'https://github.com/jaxxstorm/puppet-homelab.git',
   }
 
+  include ::profiles::choria
+
+  class{"choria::broker":
+    network_broker => true
+    identity       => $::fqdn
+  }
+
 }
