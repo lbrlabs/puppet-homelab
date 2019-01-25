@@ -11,3 +11,4 @@ profiles::consul::retry_join:
   - "saturn.home.lbrlabs.com"
   - "pluto.home.lbrlabs.com"
   - "venus.home.lbrlabs.com"
+mcollective::client: true
