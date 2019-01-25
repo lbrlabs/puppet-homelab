@@ -17,4 +17,4 @@ mcollective_choria::config:
   use_srv_records: false
   puppetserver_host: "puppetserver.home.lbrlabs.com"
   puppetca_host: "puppetserver.home.lbrlabs.com"
-  middleware_hosts: "puppetserver.home.lbrlabs.com"
+  middleware_hosts: "puppetserver.home.lbrlabs.com:4222"
