@@ -63,3 +63,38 @@ mod 'file_capability',
 mod 'coredns',
   :git => 'https://github.com/jaxxstorm/puppet-coredns.git',
   :ref => 'master'
+
+
+mod 'choria',
+  :git => 'https://github.com/choria-io/puppet-choria.git',
+  :ref => '23774ac29380ea145a53c99fda5ca98abafefc91'
+
+mod 'mcollective',
+  :git => 'https://github.com/choria-io/puppet-mcollective.git',
+  :ref => 'cf012692af335d57dc2ec93365657078cc820bf5'
+
+mod 'mcollective_choria',
+  :git => 'https://github.com/choria-io/mcollective-choria.git',
+  :ref => '45972f2e1dd3cf93c2df85928c999bb7cc18b022'
+
+mod 'mcollective_agent_puppet',
+  :git => 'https://github.com/choria-plugins/puppet-agent.git',
+  :ref => 'f17a6b1d59ade4a9a8907168556e6a5bc9edf2d6'
+
+mod 'mcollective_agent_package',
+  :git => 'https://github.com/choria-plugins/package-agent.git',
+  :ref => '1f2f2d06bbe04b1914977adc919af9233ee68c6f'
+
+mod 'mcollective_agent_service',
+  :git => 'https://github.com/choria-plugins/service-agent.git',
+  :ref => '2e4eeea8045ce4b1ae964b7fc32b63c75f82ae06'
+
+mod 'mcollective_agent_filemgr',
+  :git => 'https://github.com/choria-plugins/filemgr-agent.git',
+  :ref => 'ea4fb54d351495501f110b74adba3d640e9690c6'
+
+mod 'mcollective_util_actionpolicy',
+  :git => 'https://github.com/choria-plugins/action-policy.git',
+  :ref => 'c0449fef093780d98a23839624a2ba56364feaac',
+
+
