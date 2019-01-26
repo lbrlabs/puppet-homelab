@@ -8,7 +8,7 @@ class profiles::puppetserver {
   }
 
   class { 'r10k':
-    remote => 'https://github.com/jaxxstorm/puppet-homelab.git',
+    remote => 'https://github.com/lbrlabs/puppet-homelab.git',
   }
 
   class{ 'choria::broker':
