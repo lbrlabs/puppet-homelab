@@ -1,6 +1,6 @@
 # manage and install users
 class profiles::users (
-  $groups = [ 'admin' ] 
+  $groups = [ 'admin' ]
 ){
 
   group { 'admin':

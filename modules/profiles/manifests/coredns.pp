@@ -1,3 +1,4 @@
+# Manage a coredns installation
 class profiles::coredns {
 
   include ::coredns
