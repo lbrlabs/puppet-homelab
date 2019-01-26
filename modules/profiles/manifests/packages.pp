@@ -4,7 +4,7 @@ class profiles::packages {
   package { [
       'zsh',
       'unzip',
-      'nagios-plugins',
+      'nagios-plugins-contrib',
       'monitoring-plugins',
     ]:
     ensure => installed,
