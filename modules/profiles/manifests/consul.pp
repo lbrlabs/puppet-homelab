@@ -17,9 +17,9 @@ class profiles::consul (
     node_name            => $::fqdn,
     retry_join           => $retry_join,
     enable_script_checks => true,
-    ca_file             => "${::puppet_sslpaths['certdir']['path']}/ca.pem",
-    cert_file           => "${::puppet_sslpaths['certdir']['path']}/${::fqdn}.pem",
-    key_file            => "${::puppet_sslpaths['privatekeydir']['path']}/${::fqdn}.pem",
+    #ca_file             => "${::puppet_sslpaths['certdir']['path']}/ca.pem",
+    #cert_file           => "${::puppet_sslpaths['certdir']['path']}/${::fqdn}.pem",
+    #key_file            => "${::puppet_sslpaths['privatekeydir']['path']}/${::fqdn}.pem",
     server               => $server,
   }
 
