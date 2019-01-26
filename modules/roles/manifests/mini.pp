@@ -4,4 +4,6 @@ class roles::mini(
 
   include ::profiles::docker
 
+  include ::profiles::kubernetes::master
+
 }
