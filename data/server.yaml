@@ -1,0 +1,2 @@
+profiles::users::groups: [ 'admin', 'docker' ]
+profiles::consul::bootstrap_expect: 3
