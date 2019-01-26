@@ -8,6 +8,7 @@ class profiles::kubernetes::master {
     tags   => ['kube'],
   }
 
+  /*
   ::consul::check { 'kubernetes_healthcheck':
     ensure          => present,
     interval        => '15s',
@@ -17,5 +18,6 @@ class profiles::kubernetes::master {
     notes           => 'Check kubernetes API service',
     service_id      => 'k8s',
   }
+  */
 
 }
