@@ -27,3 +27,9 @@ choria::server_config:
   plugin.choria.agent_provider.mcorpc.config: "/etc/puppetlabs/mcollective/choria-shim.cfg"
   plugin.choria.agent_provider.mcorpc.libdir: "/opt/puppetlabs/mcollective/plugins"
   plugin.choria.middleware_hosts: "puppetserver.home.lbrlabs.com:4222"
+mcollective::site_policies:
+  - action: "allow"
+    callers: "choria=lbriggs.mcollective"
+    actions: "*"
+    facts: "*"
+    classes: "*"
