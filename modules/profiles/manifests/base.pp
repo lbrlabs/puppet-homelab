@@ -1,5 +1,6 @@
 # Base profile applied to all nodes
-class profiles::base {
+class profiles::base(
+){
 
   # Install packages
   class { '::profiles::packages':

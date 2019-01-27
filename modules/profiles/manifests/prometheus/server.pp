@@ -26,7 +26,7 @@ class profiles::prometheus::server {
             '{job!=""}'
           ],
         },
-        'static_configs'  => 
+        'static_configs'  =>
         [
           { 'targets' => [ 'prom-k8s.home.lbrlabs.com' ],
             'labels'  => { 'alias' => 'k8s'}

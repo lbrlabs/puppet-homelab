@@ -16,4 +16,9 @@ class profiles::puppetserver {
     identity       => $::fqdn,
   }
 
+  package { ['hiera-eyaml', 'hiera-eyaml-gpg', 'ruby_gpg']:
+    ensure   => present,
+    provider => puppetserver_gem,
+  }
+
 }
