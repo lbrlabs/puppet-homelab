@@ -14,6 +14,24 @@ class profiles::prometheus::server {
             'labels'  => { 'alias' => 'Prometheus'}
           }
         ]
+      },
+      {
+        'job_name'        => 'federate',
+        'scrape_interval' => '15s',
+        'scrape_timeout'  => '10s',
+        'honor_labels'    => true,
+        'metrics_path'    => '/federate',
+        'params'          => {
+          'match[]' => [
+            '{job!=""}'
+          ],
+        },
+        'static_configs'  => 
+        [
+          { 'targets' => [ 'prom-k8s.home.lbrlabs.com' ],
+            'labels'  => { 'alias' => 'k8s'}
+          }
+        ]
       }
     ]
   }
