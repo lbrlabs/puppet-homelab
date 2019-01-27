@@ -2,6 +2,7 @@
 mysql::server::remove_default_accounts: true
 mysql::server::override_options:
   mysqld:
+    'bind-address': '0.0.0.0'
     'log-error': '/var/log/mysql/mariadb.log'
     'pid-file': '/var/run/mysqld/mysqld.pid'
   mysqld_safe:
