@@ -88,3 +88,8 @@ mod 'choria-mcollective_util_actionpolicy', '3.0.0'
 mod 'prometheus',
   :git => 'https://github.com/voxpupuli/puppet-prometheus.git',
   :ref => '0b0ad6221f63180dce5a0aca3889819bcf81cef3'
+
+
+mod 'puppetserver_gem',
+  :git => 'https://github.com/puppetlabs/puppetlabs-puppetserver_gem.git',
+  :ref => '597ad74032275b532d2d6e5c1743a9e5d875b373'
