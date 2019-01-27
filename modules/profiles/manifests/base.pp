@@ -1,5 +1,11 @@
 # Base profile applied to all nodes
-class profiles::base {
+class profiles::base(
+  $encrypted = undef 
+){
+
+  notify { 'encrypted':
+    message => "Encrypted value is ${encrypted}",
+  }
 
   # Install packages
   class { '::profiles::packages':
