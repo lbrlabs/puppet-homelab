@@ -1,8 +1,8 @@
 ---
-remove_default_accounts: true
-package_name: mariadb-server
-service_name: mysql
-override_options:
+mysql::server::remove_default_accounts: true
+mysql::server::package_name: mariadb-server
+mysql::server::service_name: mysql
+mysql::server::override_options:
   mysqld:
     'log-error': '/var/log/mysql/mariadb.log'
     'pid-file': '/var/run/mysqld/mysqld.pid'
