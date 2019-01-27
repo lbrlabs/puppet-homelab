@@ -85,4 +85,6 @@ mod 'choria-mcollective_agent_filemgr', '2.0.1'
 
 mod 'choria-mcollective_util_actionpolicy', '3.0.0'
 
-
+mod 'prometheus',
+  :git => 'https://github.com/voxpupuli/puppet-prometheus.git',
+  :ref => '0b0ad6221f63180dce5a0aca3889819bcf81cef3'
