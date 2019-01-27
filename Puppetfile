@@ -93,3 +93,7 @@ mod 'prometheus',
 mod 'puppetserver_gem',
   :git => 'https://github.com/puppetlabs/puppetlabs-puppetserver_gem.git',
   :ref => '597ad74032275b532d2d6e5c1743a9e5d875b373'
+
+mod 'mysql',
+  :git => 'https://github.com/puppetlabs/puppetlabs-mysql.git',
+  :ref => '9efc0f95dbd5ce9279e6473451fa59551df0d114'
