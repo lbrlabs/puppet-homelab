@@ -13,6 +13,7 @@ hierarchy:
       - 'common.eyaml'
     options:
       gpg_gnupghome: '/etc/puppetlabs/puppetserver/.gpghome'
+      encrypt_method: 'gpg'
   - name: 'Yaml backend'
     data_hash: yaml_data
     paths:
