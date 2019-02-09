@@ -3,7 +3,7 @@ class profiles::nfs (
 ){
 
   class { '::nfs':
-    server         => $server,
+    server_enabled => $server,
     client_enabled => true,
   }
 
