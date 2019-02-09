@@ -1,3 +1,4 @@
 profiles::users::groups: [ 'admin', 'docker' ]
 profiles::consul::bootstrap_expect: 3
+profiles::consul::advertise_addr: %{interfaces.br0.ip}
 profiles::nfs::server: true

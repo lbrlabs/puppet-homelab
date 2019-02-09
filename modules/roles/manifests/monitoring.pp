@@ -1,5 +1,5 @@
 # Variety of monitoring servers
-class roles::monitoring {
+class roles::monitoring inherits roles::base {
 
   include ::profiles::prometheus::server
 
