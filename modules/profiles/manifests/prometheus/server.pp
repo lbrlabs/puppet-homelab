@@ -5,6 +5,26 @@ class profiles::prometheus::server {
     version        => '2.6.1',
     scrape_configs => [
       {
+        'job_name'          => 'node_exporter',
+        'consul_sd_configs' => [
+          'server'        => 'consul.service.consul:8500',
+          'tag_separator' => ',',
+          'services'       => [
+            'prometheus-node',
+          ],
+        ],
+        'relabel_configs'   => [
+          {
+            'source_labels' => '[__meta_consul_node]',
+            'separator'     => ';',
+            'regex'         => '(.*)',
+            'target_label'  => '__address__',
+            'replacement'   => '$1:18000',
+            'action'        => 'replace',
+          },
+        ],
+      },
+      {
         'job_name'        => 'prometheus',
         'scrape_interval' => '10s',
         'scrape_timeout'  => '10s',
