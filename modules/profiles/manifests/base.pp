@@ -20,4 +20,6 @@ class profiles::base(
 
   include ::profiles::nfs
 
+  include ::profiles::prometheus::node
+
 }
