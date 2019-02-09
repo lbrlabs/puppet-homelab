@@ -97,3 +97,7 @@ mod 'puppetserver_gem',
 mod 'mysql',
   :git => 'https://github.com/puppetlabs/puppetlabs-mysql.git',
   :ref => '9efc0f95dbd5ce9279e6473451fa59551df0d114'
+
+mod 'nfs',
+  :git => 'https://github.com/derdanne/puppet-nfs.git',
+  :ref => 'd2ab7873a5212c4e1efe1753f39d85d25d50b692'

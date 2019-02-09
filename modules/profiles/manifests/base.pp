@@ -18,4 +18,6 @@ class profiles::base(
 
   include ::profiles::choria
 
+  include ::profiles::nfs
+
 }
