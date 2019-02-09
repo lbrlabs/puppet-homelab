@@ -101,3 +101,7 @@ mod 'mysql',
 mod 'nfs',
   :git => 'https://github.com/derdanne/puppet-nfs.git',
   :ref => 'd2ab7873a5212c4e1efe1753f39d85d25d50b692'
+
+mod 'grafana',
+  :git => 'https://github.com/voxpupuli/puppet-grafana.git',
+  :ref => 'b84b3be1b51bb2c604ccb7b881b59758ee6a3041'
