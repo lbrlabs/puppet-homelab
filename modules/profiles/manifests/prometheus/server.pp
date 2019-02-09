@@ -19,7 +19,7 @@ class profiles::prometheus::server {
             'separator'     => ';',
             'regex'         => '(.*)',
             'target_label'  => '__address__',
-            'replacement'   => '$1:18000',
+            'replacement'   => '$1:9100',
             'action'        => 'replace',
           },
         ],
