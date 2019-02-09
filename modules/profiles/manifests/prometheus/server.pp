@@ -22,7 +22,16 @@ class profiles::prometheus::server {
             'replacement'   => '$1:9100',
             'action'        => 'replace',
           },
+          {
+            'source_labels' => '[__meta_consul_node]',
+            'separator'     => ';',
+            'regex'         => '(.*)',
+            'target_label'  => 'instance',
+            'replacement'   => '$1',
+            'action'        => 'replace',
+          }
         ],
+
       },
       {
         'job_name'        => 'prometheus',
