@@ -15,7 +15,7 @@ class profiles::nfs (
   if $server {
     nfs::server::export { $export_path:
       ensure  => 'mounted',
-      clients => '192.168.1.0/24(rw,insecure,async,no_root_squash) localhost(rw)',
+      clients => '192.168.1.0/24(rw,insecure,async,no_root_squash) localhost(rw,no_root_squash,async)',
     }
   }
 }
